@@ -1,7 +1,7 @@
 # OncoVita Website Redesign
 
 ## Project Overview
-Complete redesign of the OncoVita oncology website using HTML, Tailwind CSS, and JavaScript.
+Complete redesign of the OncoVita oncology website using HTML,and Tailwind CSS
 
 ## Live Website
 https://samararafiq.github.io/oncovita-redesign/
