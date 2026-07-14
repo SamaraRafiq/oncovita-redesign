@@ -1,0 +1,816 @@
+<
+
+
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OncoVita — Navbar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-obsidian font-body">
+
+
+<!-- ===================== NAVBAR ===================== -->
+<header
+  id="site-header"
+  class="fixed top-0 inset-x-0 z-50 border-b border-transparent bg-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
+>
+  <div class="mx-auto max-w-7xl px-6 lg:px-10">
+    <nav class="flex h-20 items-center justify-between" aria-label="Primary">
+
+      <!-- Logo / Brand -->
+      <a href="#" class="group flex flex-col leading-none focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-obsidian rounded-sm">
+        <span class="font-display italic text-2xl tracking-tight text-ivory">
+          Onco<span class="text-blue-600 not-italic">Vita</span>
+        </span>
+        <span class="hidden sm:block font-mono text-[10px] uppercase tracking-[0.18em] text-mute mt-1">
+          Dr. Arham Khalid &middot; Consultant Oncologist
+        </span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="hidden lg:flex items-center gap-10">
+
+        <li><a href="index.html" class="relative py-2 font-body text-sm text-mist transition-colors duration-200 hover:text-blue-400 focus:outline-none focus-visible:text-blue-400 group">Home<span class="absolute left-0 -bottom-0.5 h-px w-0 bg-blue-600 transition-all duration-300 ease-out group-hover:w-full"></span></a></li>
+
+        <li><a href="about.html" class="relative py-2 font-body text-sm text-mist transition-colors duration-200 hover:text-blue-400 focus:outline-none focus-visible:text-blue-400 group">About<span class="absolute left-0 -bottom-0.5 h-px w-0 bg-blue-600 transition-all duration-300 ease-out group-hover:w-full"></span></a></li>
+
+        <li><a href="services.html" class="relative py-2 font-body text-sm text-mist transition-colors duration-200 hover:text-blue-400 focus:outline-none focus-visible:text-blue-400 group">Services<span class="absolute left-0 -bottom-0.5 h-px w-0 bg-blue-600 transition-all duration-300 ease-out group-hover:w-full"></span></a></li>
+
+        <li><a href="treatments.html" class="relative py-2 font-body text-sm text-mist transition-colors duration-200 hover:text-blue-400 focus:outline-none focus-visible:text-blue-400 group">Treatments<span class="absolute left-0 -bottom-0.5 h-px w-0 bg-blue-600 transition-all duration-300 ease-out group-hover:w-full"></span></a></li>
+
+        <li><a href="reviews.html" class="relative py-2 font-body text-sm text-mist transition-colors duration-200 hover:text-blue-400 focus:outline-none focus-visible:text-blue-400 group">Reviews<span class="absolute left-0 -bottom-0.5 h-px w-0 bg-blue-600 transition-all duration-300 ease-out group-hover:w-full"></span></a></li>
+
+        <li><a href="faq.html" class="relative py-2 font-body text-sm text-mist transition-colors duration-200 hover:text-blue-400 focus:outline-none focus-visible:text-blue-400 group">FAQ<span class="absolute left-0 -bottom-0.5 h-px w-0 bg-blue-600 transition-all duration-300 ease-out group-hover:w-full"></span></a></li>
+
+        <li><a href="contact.html" class="relative py-2 font-body text-sm text-mist transition-colors duration-200 hover:text-blue-400 focus:outline-none focus-visible:text-blue-400 group">Contact<span class="absolute left-0 -bottom-0.5 h-px w-0 bg-blue-600 transition-all duration-300 ease-out group-hover:w-full"></span></a></li>
+
+      </ul>
+
+      <!-- Desktop CTA -->
+      <a
+        href="contact.html"
+        class="hidden lg:inline-flex items-center rounded-[10px] bg-blue-600 px-6 py-2.5 font-body text-sm font-semibold text-white shadow-[0_0_32px_0_rgba(59,130,246,0.20)] transition-all duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:bg-blue-500 hover:shadow-[0_0_35px_rgba(59,130,246,0.45)] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-obsidian"
+      >
+        Book Consultation
+      </a>
+
+      <!-- Mobile Hamburger -->
+      <button
+        id="menu-toggle"
+        type="button"
+        class="lg:hidden relative flex h-10 w-10 items-center justify-center rounded-[10px] border border-hairline text-ivory focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span class="sr-only">Open main menu</span>
+        <span class="relative block h-4 w-5" aria-hidden="true">
+          <span id="bar-1" class="absolute left-0 top-0 h-[1.5px] w-5 bg-ivory transition-all duration-300"></span>
+          <span id="bar-2" class="absolute left-0 top-[7px] h-[1.5px] w-5 bg-ivory transition-all duration-300"></span>
+          <span id="bar-3" class="absolute left-0 top-[14px] h-[1.5px] w-5 bg-ivory transition-all duration-300"></span>
+        </span>
+      </button>
+
+    </nav>
+  </div>
+
+  <!-- Mobile Menu Panel -->
+  <div
+    id="mobile-menu"
+    class="lg:hidden max-h-0 overflow-hidden border-t border-transparent bg-charcoal/70 backdrop-blur-xl transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
+  >
+    <ul class="flex flex-col gap-1 px-6 py-6">
+      <li><a href="index.html" class="block rounded-sm py-3 font-body text-base text-mist">Home</a></li>
+      <li><a href="about.html" class="block rounded-sm py-3 font-body text-base text-mist">About</a></li>
+      <li><a href="services.html" class="block rounded-sm py-3 font-body text-base text-mist">Services</a></li>
+      <li><a href="treatments.html" class="block rounded-sm py-3 font-body text-base text-mist">Treatments</a></li>
+      <li><a href="reviews.html" class="block rounded-sm py-3 font-body text-base text-mist">Reviews</a></li>
+      <li><a href="faq.html" class="block rounded-sm py-3 font-body text-base text-mist">FAQ</a></li>
+      <li><a href="contact.html" class="block rounded-sm py-3 font-body text-base text-mist">Contact</a></li>
+    </ul>
+
+    <div class="px-6 pb-6">
+      <a
+        href="#"
+        class="inline-flex w-full items-center justify-center rounded-[10px] bg-blue-600 px-6 py-3 font-body text-sm font-semibold text-white shadow-[0_0_32px_0_rgba(59,130,246,0.20)] transition-all duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:bg-blue-500 hover:shadow-[0_0_35px_rgba(59,130,246,0.45)] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-obsidian"
+      >
+        Book Consultation
+      </a>
+    </div>
+
+  </div>
+</header>
+<!-- =================== END NAVBAR =================== -->
+
+
+<script>
+  // Sticky navbar: transparent at top, glass + darker on scroll
+  const header = document.getElementById('site-header');
+  const onScroll = () => {
+    if (window.scrollY > 40) {
+      header.classList.remove('bg-transparent', 'border-transparent');
+      header.classList.add('bg-obsidian/80', 'backdrop-blur-xl', 'border-hairline', 'shadow-[0_8px_40px_-8px_rgba(0,0,0,0.6)]');
+    } else {
+      header.classList.add('bg-transparent', 'border-transparent');
+      header.classList.remove('bg-obsidian/80', 'backdrop-blur-xl', 'border-hairline', 'shadow-[0_8px_40px_-8px_rgba(0,0,0,0.6)]');
+    }
+  };
+  window.addEventListener('scroll', onScroll);
+  onScroll();
+
+
+  // Mobile menu toggle with hamburger -> X animation
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const bar1 = document.getElementById('bar-1');
+  const bar2 = document.getElementById('bar-2');
+  const bar3 = document.getElementById('bar-3');
+  let menuOpen = false;
+
+
+  menuToggle.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    menuToggle.setAttribute('aria-expanded', String(menuOpen));
+
+
+    if (menuOpen) {
+      mobileMenu.classList.remove('max-h-0');
+      mobileMenu.classList.add('max-h-[28rem]', 'border-hairline');
+      bar1.style.transform = 'translateY(7px) rotate(45deg)';
+      bar2.style.opacity = '0';
+      bar3.style.transform = 'translateY(-7px) rotate(-45deg)';
+    } else {
+      mobileMenu.classList.add('max-h-0');
+      mobileMenu.classList.remove('max-h-[28rem]', 'border-hairline');
+      bar1.style.transform = 'none';
+      bar2.style.opacity = '1';
+      bar3.style.transform = 'none';
+    }
+  });
+
+
+  // Close mobile menu when a link is clicked
+  mobileMenu.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (menuOpen) menuToggle.click();
+    });
+  });
+</script>
+
+
+</body>
+</html>
+
+
+<title>OncoVita — Hero</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          obsidian: '#0A0B0D',
+          charcoal: '#14161A',
+          charcoal2: '#1C1F24',
+          hairline: '#2A2D33',
+          gold: { 300: '#E4C888', 500: '#C9A15C', 700: '#8F7038' },
+          teal: { 300: '#5FA793', 500: '#2E7D6B' },
+          oxblood: '#7A2B38',
+          ivory: '#F2EEE6',
+          mist: '#B8BAC0',
+          mute: '#6E7177',
+        },
+        fontFamily: {
+          display: ['Fraunces', 'serif'],
+          body: ['Manrope', 'sans-serif'],
+          mono: ['"IBM Plex Mono"', 'monospace'],
+        },
+        boxShadow: {
+          glowGold: '0 0 32px 0 rgba(201,161,92,0.25), 0 0 8px 0 rgba(201,161,92,0.4)',
+          glowTeal: '0 0 32px 0 rgba(46,125,107,0.22)',
+        },
+        keyframes: {
+          pulseGlow: {
+            '0%, 100%': { opacity: '0.55', transform: 'scale(1)' },
+            '50%': { opacity: '1', transform: 'scale(1.06)' },
+          },
+          driftSlow: {
+            '0%, 100%': { transform: 'translate(0px, 0px)' },
+            '50%': { transform: 'translate(20px, -24px)' },
+          },
+          fadeInUp: {
+            '0%': { opacity: '0', transform: 'translateY(24px)' },
+            '100%': { opacity: '1', transform: 'translateY(0)' },
+          },
+        },
+        animation: {
+          pulseGlow: 'pulseGlow 8s ease-in-out infinite',
+          driftSlow: 'driftSlow 14s ease-in-out infinite',
+          fadeInUp: 'fadeInUp 0.9s cubic-bezier(0.22,1,0.36,1) both',
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-obsidian">
+ 
+ 
+ <!-- ===================== FAQ PAGE ===================== -->
+<!-- Assumes the existing OncoVita Tailwind config: colors (obsidian, charcoal, charcoal2, hairline,
+     blue.300/500/700, ivory, mist, mute), fontFamily (display/body/mono), radius
+     (card, hero), shadows (glowBlue), and keyframes/animations (fadeInUp). No header/footer
+     included — insert into the page shell (same assumption used for the other inner pages this
+     session; say the word if you want navbar+footer wired in like the Reviews page). Accordion uses
+     native checkboxes + the CSS :has() selector (Tailwind's group-has-[:checked] variant) — zero
+     JavaScript, keyboard-accessible, same technique as the homepage FAQ section. -->
+
+<!-- ===== FAQ HERO ===== -->
+<section class="relative w-full overflow-hidden bg-obsidian pt-40 pb-20 lg:pt-48 lg:pb-24" aria-label="FAQ Hero">
+
+  <div class="pointer-events-none absolute left-1/2 top-0 h-[28rem] w-[28rem] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(59,130,246,0.10)_0%,rgba(59,130,246,0.06)_50%,transparent_75%)] blur-3xl" aria-hidden="true"></div>
+
+  <div class="relative mx-auto max-w-3xl px-6 text-center lg:px-10">
+
+    <nav aria-label="Breadcrumb" class="mb-10 motion-safe:animate-fadeInUp">
+      <ol class="flex items-center justify-center gap-2 font-mono text-[11px] uppercase tracking-[0.14em] text-mute">
+        <li><a href="#" class="transition-colors duration-300 hover:text-blue-400">Home</a></li>
+        <li aria-hidden="true">/</li>
+        <li class="text-mist">FAQ</li>
+      </ol>
+    </nav>
+
+    <p class="mb-6 inline-flex items-center gap-2 rounded-[4px] border border-hairline bg-charcoal/60 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-blue-400 backdrop-blur-md motion-safe:animate-fadeInUp" style="animation-delay:60ms">
+      <span class="h-1.5 w-1.5 rounded-full bg-blue-500 shadow-[0_0_35px_rgba(59,130,246,0.35)]"></span>
+      FAQ
+    </p>
+
+    <h1 class="font-display text-5xl leading-[1.05] text-ivory sm:text-6xl motion-safe:animate-fadeInUp" style="animation-delay:120ms">
+      Frequently Asked <em class="text-blue-400 not-italic italic">Questions</em>
+    </h1>
+
+    <p class="mx-auto mt-8 max-w-xl font-body text-base leading-relaxed text-mist sm:text-lg motion-safe:animate-fadeInUp" style="animation-delay:200ms">
+      Everything you need to know before your first visit &mdash; appointments, treatments, clinic hours, telehealth, and consultation process.
+    </p>
+
+    <!-- category pills -->
+    <div class="mt-10 flex flex-wrap items-center justify-center gap-3 motion-safe:animate-fadeInUp" style="animation-delay:280ms">
+      <span class="group relative overflow-hidden rounded-full border border-hairline bg-charcoal/50 px-5 py-2.5 font-mono text-[11px] uppercase tracking-[0.12em] text-mist backdrop-blur-md transition-colors duration-300 hover:text-blue-400 hover:border-blue-500/40">
+        <span class="pointer-events-none absolute inset-0 origin-left scale-x-0 bg-blue-500/10 transition-transform duration-500 ease-out group-hover:scale-x-100" aria-hidden="true"></span>
+        <span class="relative">Appointments</span>
+      </span>
+      <span class="group relative overflow-hidden rounded-full border border-hairline bg-charcoal/50 px-5 py-2.5 font-mono text-[11px] uppercase tracking-[0.12em] text-mist backdrop-blur-md transition-colors duration-300 hover:text-blue-400 hover:border-blue-500/40">
+        <span class="pointer-events-none absolute inset-0 origin-left scale-x-0 bg-blue-500/10 transition-transform duration-500 ease-out group-hover:scale-x-100" aria-hidden="true"></span>
+        <span class="relative">Treatments</span>
+      </span>
+      <span class="group relative overflow-hidden rounded-full border border-hairline bg-charcoal/50 px-5 py-2.5 font-mono text-[11px] uppercase tracking-[0.12em] text-mist backdrop-blur-md transition-colors duration-300 hover:text-blue-400 hover:border-blue-500/40">
+        <span class="pointer-events-none absolute inset-0 origin-left scale-x-0 bg-blue-500/10 transition-transform duration-500 ease-out group-hover:scale-x-100" aria-hidden="true"></span>
+        <span class="relative">First Visit</span>
+      </span>
+      <span class="group relative overflow-hidden rounded-full border border-hairline bg-charcoal/50 px-5 py-2.5 font-mono text-[11px] uppercase tracking-[0.12em] text-mist backdrop-blur-md transition-colors duration-300 hover:text-blue-400 hover:border-blue-500/40">
+        <span class="pointer-events-none absolute inset-0 origin-left scale-x-0 bg-blue-500/10 transition-transform duration-500 ease-out group-hover:scale-x-100" aria-hidden="true"></span>
+        <span class="relative">Telehealth</span>
+      </span>
+      <span class="group relative overflow-hidden rounded-full border border-hairline bg-charcoal/50 px-5 py-2.5 font-mono text-[11px] uppercase tracking-[0.12em] text-mist backdrop-blur-md transition-colors duration-300 hover:text-blue-400 hover:border-blue-500/40">
+        <span class="pointer-events-none absolute inset-0 origin-left scale-x-0 bg-blue-500/10 transition-transform duration-500 ease-out group-hover:scale-x-100" aria-hidden="true"></span>
+        <span class="relative">Costs</span>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 1: BOOKING & SCHEDULING ===== -->
+<section aria-label="Appointments and Booking" class="relative w-full overflow-hidden bg-obsidian pb-20 lg:pb-24">
+  <div class="mx-auto max-w-3xl px-6 lg:px-10">
+
+    <div class="mb-12 motion-safe:animate-fadeInUp">
+      <p class="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400">Appointments &amp; Booking</p>
+      <h2 class="font-display text-3xl leading-[1.15] text-ivory sm:text-4xl">Booking &amp; Scheduling</h2>
+    </div>
+
+    <div class="rounded-hero border border-hairline bg-charcoal/50 px-8 backdrop-blur-xl motion-safe:animate-fadeInUp sm:px-10" style="animation-delay:80ms">
+
+      <!-- Q1 -->
+      <div class="group relative">
+        <input type="checkbox" id="faq1-1" class="peer absolute h-0 w-0 opacity-0" />
+        <label for="faq1-1" class="flex cursor-pointer items-center justify-between gap-6 border-b border-hairline py-6 transition-colors duration-300">
+          <span class="font-body text-base font-medium text-ivory transition-colors duration-300 group-hover:text-blue-400 sm:text-lg">How do I book an appointment?</span>
+          <span class="relative h-5 w-5 shrink-0">
+            <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-mist transition-colors duration-300 group-hover:bg-blue-400"></span>
+            <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-mist transition-all duration-300 ease-out group-hover:bg-blue-400 group-has-[:checked]:scale-y-0"></span>
+          </span>
+        </label>
+        <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-mist">Appointments can be booked through our website, WhatsApp, phone call, or email. Our team confirms your appointment within a short time.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="group relative">
+        <input type="checkbox" id="faq1-2" class="peer absolute h-0 w-0 opacity-0" />
+        <label for="faq1-2" class="flex cursor-pointer items-center justify-between gap-6 border-b border-hairline py-6 transition-colors duration-300">
+          <span class="font-body text-base font-medium text-ivory transition-colors duration-300 group-hover:text-blue-400 sm:text-lg">What are the clinic hours?</span>
+          <span class="relative h-5 w-5 shrink-0">
+            <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-mist transition-colors duration-300 group-hover:bg-blue-400"></span>
+            <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-mist transition-all duration-300 ease-out group-hover:bg-blue-400 group-has-[:checked]:scale-y-0"></span>
+          </span>
+        </label>
+        <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-mist">Monday to Saturday from 9:00 AM to 6:00 PM. Emergency support is available for existing patients.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="group relative">
+        <input type="checkbox" id="faq1-3" class="peer absolute h-0 w-0 opacity-0" />
+        <label for="faq1-3" class="flex cursor-pointer items-center justify-between gap-6 border-b border-hairline py-6 transition-colors duration-300">
+          <span class="font-body text-base font-medium text-ivory transition-colors duration-300 group-hover:text-blue-400 sm:text-lg">How far in advance should I book?</span>
+          <span class="relative h-5 w-5 shrink-0">
+            <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-mist transition-colors duration-300 group-hover:bg-blue-400"></span>
+            <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-mist transition-all duration-300 ease-out group-hover:bg-blue-400 group-has-[:checked]:scale-y-0"></span>
+          </span>
+        </label>
+        <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-mist">We recommend booking 3&ndash;7 days in advance, although same-week appointments may be available.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="group relative">
+        <input type="checkbox" id="faq1-4" class="peer absolute h-0 w-0 opacity-0" />
+        <label for="faq1-4" class="flex cursor-pointer items-center justify-between gap-6 py-6 transition-colors duration-300">
+          <span class="font-body text-base font-medium text-ivory transition-colors duration-300 group-hover:text-blue-400 sm:text-lg">Can I reschedule or cancel?</span>
+          <span class="relative h-5 w-5 shrink-0">
+            <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-mist transition-colors duration-300 group-hover:bg-blue-400"></span>
+            <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-mist transition-all duration-300 ease-out group-hover:bg-blue-400 group-has-[:checked]:scale-y-0"></span>
+          </span>
+        </label>
+        <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-mist">Yes. Please notify us at least 24 hours before your appointment whenever possible.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 2: PREPARING FOR YOUR CONSULTATION ===== -->
+<section aria-label="Your First Visit" class="relative w-full overflow-hidden bg-obsidian pb-24 lg:pb-32">
+  <div class="mx-auto max-w-3xl px-6 lg:px-10">
+
+    <div class="mb-12 motion-safe:animate-fadeInUp">
+      <p class="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400">Your First Visit</p>
+      <h2 class="font-display text-3xl leading-[1.15] text-ivory sm:text-4xl">Preparing for Your Consultation</h2>
+    </div>
+
+    <div class="rounded-hero border border-hairline bg-charcoal/50 px-8 backdrop-blur-xl motion-safe:animate-fadeInUp sm:px-10" style="animation-delay:80ms">
+
+      <!-- Q1 -->
+      <div class="group relative">
+        <input type="checkbox" id="faq2-1" class="peer absolute h-0 w-0 opacity-0" />
+        <label for="faq2-1" class="flex cursor-pointer items-center justify-between gap-6 border-b border-hairline py-6 transition-colors duration-300">
+          <span class="font-body text-base font-medium text-ivory transition-colors duration-300 group-hover:text-blue-400 sm:text-lg">What should I bring?</span>
+          <span class="relative h-5 w-5 shrink-0">
+            <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-mist transition-colors duration-300 group-hover:bg-blue-400"></span>
+            <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-mist transition-all duration-300 ease-out group-hover:bg-blue-400 group-has-[:checked]:scale-y-0"></span>
+          </span>
+        </label>
+        <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-mist">Bring previous medical records, pathology reports, scans, prescriptions, and identification.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="group relative">
+        <input type="checkbox" id="faq2-2" class="peer absolute h-0 w-0 opacity-0" />
+        <label for="faq2-2" class="flex cursor-pointer items-center justify-between gap-6 border-b border-hairline py-6 transition-colors duration-300">
+          <span class="font-body text-base font-medium text-ivory transition-colors duration-300 group-hover:text-blue-400 sm:text-lg">What happens during the consultation?</span>
+          <span class="relative h-5 w-5 shrink-0">
+            <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-mist transition-colors duration-300 group-hover:bg-blue-400"></span>
+            <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-mist transition-all duration-300 ease-out group-hover:bg-blue-400 group-has-[:checked]:scale-y-0"></span>
+          </span>
+        </label>
+        <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-mist">Dr. Khalid reviews your reports, explains the diagnosis, discusses treatment options, and answers all questions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="group relative">
+        <input type="checkbox" id="faq2-3" class="peer absolute h-0 w-0 opacity-0" />
+        <label for="faq2-3" class="flex cursor-pointer items-center justify-between gap-6 border-b border-hairline py-6 transition-colors duration-300">
+          <span class="font-body text-base font-medium text-ivory transition-colors duration-300 group-hover:text-blue-400 sm:text-lg">How long does a consultation last?</span>
+          <span class="relative h-5 w-5 shrink-0">
+            <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-mist transition-colors duration-300 group-hover:bg-blue-400"></span>
+            <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-mist transition-all duration-300 ease-out group-hover:bg-blue-400 group-has-[:checked]:scale-y-0"></span>
+          </span>
+        </label>
+        <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-mist">Typically 30&ndash;60 minutes depending on the complexity of the case.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="group relative">
+        <input type="checkbox" id="faq2-4" class="peer absolute h-0 w-0 opacity-0" />
+        <label for="faq2-4" class="flex cursor-pointer items-center justify-between gap-6 py-6 transition-colors duration-300">
+          <span class="font-body text-base font-medium text-ivory transition-colors duration-300 group-hover:text-blue-400 sm:text-lg">Can a family member accompany me?</span>
+          <span class="relative h-5 w-5 shrink-0">
+            <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-mist transition-colors duration-300 group-hover:bg-blue-400"></span>
+            <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-mist transition-all duration-300 ease-out group-hover:bg-blue-400 group-has-[:checked]:scale-y-0"></span>
+          </span>
+        </label>
+        <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-mist">Yes. We encourage one or two family members to attend for support.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- =================== END FAQ PAGE =================== -->
+ 
+
+
+<!-- ===================== FAQ PAGE — PART 2 ===================== -->
+<!-- Continues directly after "Preparing for Your Consultation" — same config assumptions and
+     zero-JS checkbox + :has() accordion technique as Part 1. -->
+
+<!-- ===== SECTION 3: UNDERSTANDING YOUR TREATMENT ===== -->
+<section aria-label="Treatment Questions" class="relative w-full overflow-hidden bg-obsidian pb-20 lg:pb-24">
+  <div class="mx-auto max-w-3xl px-6 lg:px-10">
+
+    <div class="mb-12 motion-safe:animate-fadeInUp">
+      <p class="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400">Treatment Questions</p>
+      <h2 class="font-display text-3xl leading-[1.15] text-ivory sm:text-4xl">Understanding Your Treatment</h2>
+    </div>
+
+    <div class="rounded-hero border border-hairline bg-charcoal/50 px-8 backdrop-blur-xl motion-safe:animate-fadeInUp sm:px-10" style="animation-delay:80ms">
+
+      <!-- Q1 -->
+      <div class="group relative">
+        <input type="checkbox" id="faq3-1" class="peer absolute h-0 w-0 opacity-0" />
+        <label for="faq3-1" class="flex cursor-pointer items-center justify-between gap-6 border-b border-hairline py-6 transition-colors duration-300">
+          <span class="font-body text-base font-medium text-ivory transition-colors duration-300 group-hover:text-blue-400 sm:text-lg">Do you offer second opinions?</span>
+          <span class="relative h-5 w-5 shrink-0">
+            <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-mist transition-colors duration-300 group-hover:bg-blue-400"></span>
+            <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-mist transition-all duration-300 ease-out group-hover:bg-blue-400 group-has-[:checked]:scale-y-0"></span>
+          </span>
+        </label>
+        <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-mist">Yes. We provide comprehensive second-opinion consultations for patients diagnosed elsewhere.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="group relative">
+        <input type="checkbox" id="faq3-2" class="peer absolute h-0 w-0 opacity-0" />
+        <label for="faq3-2" class="flex cursor-pointer items-center justify-between gap-6 border-b border-hairline py-6 transition-colors duration-300">
+          <span class="font-body text-base font-medium text-ivory transition-colors duration-300 group-hover:text-blue-400 sm:text-lg">What cancer types do you treat?</span>
+          <span class="relative h-5 w-5 shrink-0">
+            <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-mist transition-colors duration-300 group-hover:bg-blue-400"></span>
+            <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-mist transition-all duration-300 ease-out group-hover:bg-blue-400 group-has-[:checked]:scale-y-0"></span>
+          </span>
+        </label>
+        <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-mist">We treat breast, lung, colorectal, blood, prostate, gynecologic, thyroid, gastrointestinal, and many other cancers.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="group relative">
+        <input type="checkbox" id="faq3-3" class="peer absolute h-0 w-0 opacity-0" />
+        <label for="faq3-3" class="flex cursor-pointer items-center justify-between gap-6 border-b border-hairline py-6 transition-colors duration-300">
+          <span class="font-body text-base font-medium text-ivory transition-colors duration-300 group-hover:text-blue-400 sm:text-lg">What therapies are available?</span>
+          <span class="relative h-5 w-5 shrink-0">
+            <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-mist transition-colors duration-300 group-hover:bg-blue-400"></span>
+            <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-mist transition-all duration-300 ease-out group-hover:bg-blue-400 group-has-[:checked]:scale-y-0"></span>
+          </span>
+        </label>
+        <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-mist">Chemotherapy, immunotherapy, targeted therapy, hormonal therapy, supportive care, and personalized treatment planning.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="group relative">
+        <input type="checkbox" id="faq3-4" class="peer absolute h-0 w-0 opacity-0" />
+        <label for="faq3-4" class="flex cursor-pointer items-center justify-between gap-6 py-6 transition-colors duration-300">
+          <span class="font-body text-base font-medium text-ivory transition-colors duration-300 group-hover:text-blue-400 sm:text-lg">Do you perform surgery or radiation?</span>
+          <span class="relative h-5 w-5 shrink-0">
+            <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-mist transition-colors duration-300 group-hover:bg-blue-400"></span>
+            <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-mist transition-all duration-300 ease-out group-hover:bg-blue-400 group-has-[:checked]:scale-y-0"></span>
+          </span>
+        </label>
+        <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-mist">We coordinate with trusted surgeons and radiation oncology specialists whenever required.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 4: REMOTE CONSULTATIONS ===== -->
+<section aria-label="Telehealth and Online" class="relative w-full overflow-hidden bg-obsidian pb-24 lg:pb-32">
+  <div class="mx-auto max-w-3xl px-6 lg:px-10">
+
+    <div class="mb-12 motion-safe:animate-fadeInUp">
+      <p class="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400">Telehealth &amp; Online</p>
+      <h2 class="font-display text-3xl leading-[1.15] text-ivory sm:text-4xl">Remote Consultations</h2>
+    </div>
+
+    <div class="rounded-hero border border-hairline bg-charcoal/50 px-8 backdrop-blur-xl motion-safe:animate-fadeInUp sm:px-10" style="animation-delay:80ms">
+
+      <!-- Q1 -->
+      <div class="group relative">
+        <input type="checkbox" id="faq4-1" class="peer absolute h-0 w-0 opacity-0" />
+        <label for="faq4-1" class="flex cursor-pointer items-center justify-between gap-6 border-b border-hairline py-6 transition-colors duration-300">
+          <span class="font-body text-base font-medium text-ivory transition-colors duration-300 group-hover:text-blue-400 sm:text-lg">Is telehealth available?</span>
+          <span class="relative h-5 w-5 shrink-0">
+            <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-mist transition-colors duration-300 group-hover:bg-blue-400"></span>
+            <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-mist transition-all duration-300 ease-out group-hover:bg-blue-400 group-has-[:checked]:scale-y-0"></span>
+          </span>
+        </label>
+        <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-mist">Yes. Video consultations are available for eligible patients across Pakistan.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="group relative">
+        <input type="checkbox" id="faq4-2" class="peer absolute h-0 w-0 opacity-0" />
+        <label for="faq4-2" class="flex cursor-pointer items-center justify-between gap-6 border-b border-hairline py-6 transition-colors duration-300">
+          <span class="font-body text-base font-medium text-ivory transition-colors duration-300 group-hover:text-blue-400 sm:text-lg">Which platform is used?</span>
+          <span class="relative h-5 w-5 shrink-0">
+            <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-mist transition-colors duration-300 group-hover:bg-blue-400"></span>
+            <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-mist transition-all duration-300 ease-out group-hover:bg-blue-400 group-has-[:checked]:scale-y-0"></span>
+          </span>
+        </label>
+        <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-mist">Secure WhatsApp Video, Zoom, or Google Meet depending on patient preference.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="group relative">
+        <input type="checkbox" id="faq4-3" class="peer absolute h-0 w-0 opacity-0" />
+        <label for="faq4-3" class="flex cursor-pointer items-center justify-between gap-6 border-b border-hairline py-6 transition-colors duration-300">
+          <span class="font-body text-base font-medium text-ivory transition-colors duration-300 group-hover:text-blue-400 sm:text-lg">Can prescriptions be issued online?</span>
+          <span class="relative h-5 w-5 shrink-0">
+            <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-mist transition-colors duration-300 group-hover:bg-blue-400"></span>
+            <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-mist transition-all duration-300 ease-out group-hover:bg-blue-400 group-has-[:checked]:scale-y-0"></span>
+          </span>
+        </label>
+        <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-mist">Where medically appropriate, follow-up prescriptions and treatment advice can be provided.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="group relative">
+        <input type="checkbox" id="faq4-4" class="peer absolute h-0 w-0 opacity-0" />
+        <label for="faq4-4" class="flex cursor-pointer items-center justify-between gap-6 py-6 transition-colors duration-300">
+          <span class="font-body text-base font-medium text-ivory transition-colors duration-300 group-hover:text-blue-400 sm:text-lg">Who should use telehealth?</span>
+          <span class="relative h-5 w-5 shrink-0">
+            <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-mist transition-colors duration-300 group-hover:bg-blue-400"></span>
+            <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-mist transition-all duration-300 ease-out group-hover:bg-blue-400 group-has-[:checked]:scale-y-0"></span>
+          </span>
+        </label>
+        <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-mist">Ideal for second opinions, follow-ups, treatment discussions, and patients living outside Islamabad.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA: WE'RE HERE TO HELP ===== -->
+<section aria-label="Still Have Questions" class="relative w-full overflow-hidden bg-obsidian pb-24 lg:pb-32">
+
+  <div class="pointer-events-none absolute left-1/2 top-1/2 h-[26rem] w-[26rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(59,130,246,0.12)_0%,rgba(59,130,246,0.06)_50%,transparent_75%)] blur-3xl" aria-hidden="true"></div>
+
+  <div class="relative mx-auto max-w-2xl px-6 text-center lg:px-10">
+
+    <p class="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400 motion-safe:animate-fadeInUp">
+      Still Have Questions?
+    </p>
+
+    <h2 class="font-display text-3xl leading-[1.15] text-ivory sm:text-4xl motion-safe:animate-fadeInUp" style="animation-delay:60ms">
+      We're Here to Help
+    </h2>
+
+    <p class="mt-5 font-body text-base leading-relaxed text-mist sm:text-lg motion-safe:animate-fadeInUp" style="animation-delay:120ms">
+      If you couldn't find the answer you're looking for, contact our team. We'll guide you through appointments, treatment options, and consultation planning.
+    </p>
+
+    <div class="mt-10 flex flex-col items-center justify-center gap-4 motion-safe:animate-fadeInUp sm:flex-row sm:gap-6" style="animation-delay:180ms">
+
+      <a
+        href="contact.html"
+        class="inline-flex w-full items-center justify-center rounded-[10px] border border-hairline bg-white/[0.03] px-8 py-3.5 font-body text-sm font-semibold text-ivory backdrop-blur-md transition-all duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-blue-600 hover:bg-white/[0.06] hover:shadow-[0_0_35px_rgba(59,130,246,0.35)] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-obsidian sm:w-auto"
+      >
+        Contact Us
+      </a>
+
+      <a
+        href="contact.html"
+        class="inline-flex w-full items-center justify-center rounded-[10px] bg-blue-600 px-8 py-3.5 font-body text-sm font-semibold text-white shadow-[0_0_32px_0_rgba(59,130,246,0.15)] transition-all duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:bg-blue-500 hover:shadow-[0_0_35px_rgba(59,130,246,0.35)] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-obsidian sm:w-auto"
+      >
+        Book Consultation
+      </a>
+
+    </div>
+  </div>
+</section>
+<!-- =================== END FAQ PAGE — PART 2 =================== -->
+
+
+
+
+
+
+
+
+
+<!-- ===================== FOOTER ===================== -->
+<!-- Assumes the existing OncoVita Tailwind config: colors (obsidian, charcoal, charcoal2, hairline,
+     gold.300/500/700, teal.300/500, ivory, mist, mute), fontFamily (display/body/mono), radius
+     (button, card), shadows (glowGold, glowTeal, lift), and keyframes/animations (fadeInUp, pulseGlow).
+     Editorial asymmetric layout (large wordmark + two staggered link lists + a horizontal legal strip)
+     rather than a traditional 4-equal-column footer. "Back to Top" links to #top — add id="top" to your
+     page root (or the header) and class="scroll-smooth" on the <html> element for native smooth scroll,
+     since that can't be set from within a footer fragment alone. -->
+<footer class="relative w-full overflow-hidden bg-obsidian pt-20" aria-label="Site footer">
+
+  <!-- ambient glow at top edge -->
+  <div class="pointer-events-none absolute inset-x-0 top-0 z-0 h-64 bg-[radial-gradient(ellipse_60%_100%_at_50%_0%,rgba(59,130,246,0.10),transparent_70%)]" aria-hidden="true"></div>
+
+  <!-- thin animated blue divider -->
+  <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-10">
+    <div class="h-px w-full bg-gradient-to-r from-transparent via-blue-600/70 to-transparent motion-safe:animate-pulseGlow [animation-duration:4s]"></div>
+  </div>
+
+  <div class="relative z-10 mx-auto max-w-7xl px-6 py-20 lg:px-10">
+
+    <div class="grid grid-cols-1 gap-16 lg:grid-cols-12 lg:gap-8">
+
+      <!-- ===== Brand block ===== -->
+      <div class="motion-safe:animate-fadeInUp lg:col-span-5" style="animation-delay:0ms">
+
+        <p class="font-display italic text-5xl leading-none text-ivory sm:text-6xl">
+          Onco<span class="text-blue-600 not-italic">Vita</span>
+        </p>
+
+        <p class="mt-6 max-w-sm font-body text-sm leading-relaxed text-mist sm:text-base">
+          Pakistan's premier cancer specialist clinic dedicated to compassionate, evidence-based oncology care. Serving patients from across the country and internationally.
+        </p>
+
+        <a
+          href="contact.html"
+          class="mt-8 inline-flex items-center rounded-[10px] bg-blue-600 px-7 py-3 font-body text-sm font-semibold text-white transition-all duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:bg-blue-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.45)] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-obsidian"
+        >
+          Book Consultation
+        </a>
+
+        <!-- social icons -->
+<div class="mt-10 flex items-center gap-4">
+  <a href="https://facebook.com/oncovita" target="_blank" rel="noopener" aria-label="OncoVita on Facebook" class="group flex h-11 w-11 items-center justify-center rounded-full border border-hairline text-mist transition-all duration-300 hover:border-blue-500/50 hover:text-blue-400 hover:shadow-[0_0_20px_rgba(59,130,246,.35)]">
+    <svg viewBox="0 0 24 24" fill="none" class="h-4.5 w-4.5 transition-transform duration-300 ease-out group-hover:-rotate-12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 8.5h-2c-.8 0-1.5.7-1.5 1.5v2h3.3l-.4 3H11.5V21h-3v-6H6.5V12H8.5V9.8C8.5 7.4 10 6 12.3 6H15v2.5Z" />
+    </svg>
+  </a>
+
+  <a href="https://linkedin.com/company/oncovita" target="_blank" rel="noopener" aria-label="OncoVita on LinkedIn" class="group flex h-11 w-11 items-center justify-center rounded-full border border-hairline text-mist transition-all duration-300 hover:border-blue-500/50 hover:text-blue-400 hover:shadow-[0_0_20px_rgba(59,130,246,.35)]">
+    <svg viewBox="0 0 24 24" fill="none" class="h-4.5 w-4.5 transition-transform duration-300 ease-out group-hover:scale-110" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4" y="9" width="3" height="10" />
+      <circle cx="5.5" cy="5.5" r="1.5" />
+      <path d="M11 19v-6a3 3 0 0 1 6 0v6" />
+      <path d="M11 12.5V19" />
+    </svg>
+  </a>
+
+  <a href="https://instagram.com/oncovita" target="_blank" rel="noopener" aria-label="OncoVita on Instagram" class="group flex h-11 w-11 items-center justify-center rounded-full border border-hairline text-mist transition-all duration-300 hover:border-blue-500/50 hover:text-blue-400 hover:shadow-[0_0_20px_rgba(59,130,246,.35)]">
+    <svg viewBox="0 0 24 24" fill="none" class="h-5 w-5 transition-transform duration-300 ease-out group-hover:scale-110" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+      <circle cx="12" cy="12" r="4"></circle>
+      <circle cx="17.5" cy="6.5" r="1"></circle>
+    </svg>
+  </a>
+
+  <a href="https://youtube.com/oncovita" target="_blank" rel="noopener" aria-label="OncoVita on YouTube" class="group relative flex h-11 w-11 items-center justify-center rounded-full border border-hairline text-mist transition-all duration-300 hover:border-blue-500/50 hover:text-blue-400">
+    <span class="absolute inset-0 rounded-full bg-blue-500/0 blur-md transition-all duration-300 group-hover:bg-blue-500/20" aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" fill="none" class="relative h-4.5 w-4.5 transition-transform duration-300 ease-out group-hover:scale-110" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3.5" y="6.5" width="17" height="11" rx="3" />
+      <path d="M10.5 9.5l4 2.5-4 2.5v-5Z" fill="currentColor" stroke="none" />
+    </svg>
+  </a>
+</div>
+</div>
+
+<!-- ===== Quick Links (staggered) ===== -->
+<div class="motion-safe:animate-fadeInUp lg:col-span-3 lg:col-start-7" style="animation-delay:100ms">
+  <p class="mb-6 font-mono text-[11px] uppercase tracking-[0.16em] text-blue-400">Quick Links</p>
+
+  <ul class="flex flex-col gap-3">
+    <li><a href="#home" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-blue-300">Home</a></li>
+
+    <li><a href="about.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-blue-300">About Dr. Khalid</a></li>
+
+    <li><a href="services.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-blue-300">Services</a></li>
+
+    <li><a href="treatments.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-blue-300">Treatments</a></li>
+
+    <li><a href="reviews.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-blue-300">Patient Reviews</a></li>
+
+    <li><a href="faq.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-blue-300">FAQ</a></li>
+
+    <li><a href="contact.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-blue-300">Contact</a></li>
+  </ul>
+</div>
+
+      <!-- ===== Treatments (staggered lower) ===== -->
+      <div class="motion-safe:animate-fadeInUp lg:col-span-3 lg:mt-14" style="animation-delay:180ms">
+        <p class="mb-6 font-mono text-[11px] uppercase tracking-[0.16em] text-teal-300">Treatments</p>
+        <ul class="flex flex-col gap-3">
+          <li><a href="treatments.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-ivory">Chemotherapy</a></li>
+          <li><a href="treatments.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-ivory">Immunotherapy</a></li>
+          <li><a href="treatments.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-ivory">Targeted Therapy</a></li>
+          <li><a href="treatments.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-ivory">Hormonal Therapy</a></li>
+          <li><a href="treatments.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-ivory">Palliative Care</a></li>
+          <li><a href="treatments.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-ivory">Second Opinion</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===== Legal: horizontal flowing strip, not a column ===== -->
+    <div class="mt-16 border-t border-hairline pt-8 motion-safe:animate-fadeInUp" style="animation-delay:240ms">
+      <nav aria-label="Legal">
+        <ul class="flex flex-wrap items-center gap-x-6 gap-y-3">
+          <li><a href="#" class="font-mono text-[11px] uppercase tracking-[0.12em] text-mute transition-colors duration-200 hover:text-gold-300">Privacy Policy</a></li>
+          <li class="text-hairline">&middot;</li>
+          <li><a href="#" class="font-mono text-[11px] uppercase tracking-[0.12em] text-mute transition-colors duration-200 hover:text-gold-300">Terms of Service</a></li>
+          <li class="text-hairline">&middot;</li>
+          <li><a href="#" class="font-mono text-[11px] uppercase tracking-[0.12em] text-mute transition-colors duration-200 hover:text-gold-300">Patient Rights</a></li>
+          <li class="text-hairline">&middot;</li>
+          <li><a href="#" class="font-mono text-[11px] uppercase tracking-[0.12em] text-mute transition-colors duration-200 hover:text-gold-300">Cookie Policy</a></li>
+          <li class="text-hairline">&middot;</li>
+          <li><a href="#" class="font-mono text-[11px] uppercase tracking-[0.12em] text-mute transition-colors duration-200 hover:text-gold-300">Disclaimer</a></li>
+          <li class="text-hairline">&middot;</li>
+          <li><a href="#" class="font-mono text-[11px] uppercase tracking-[0.12em] text-mute transition-colors duration-200 hover:text-gold-300">Sitemap</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- ===== Copyright ===== -->
+    <p class="mt-8 font-mono text-[11px] leading-relaxed text-mute">
+      &copy; 2025 OncoVita &middot; Dr. Arham Khalid Cancer Centre &middot; All Rights Reserved &middot; Islamabad, Pakistan
+    </p>
+  </div>
+
+
+</footer>
+<!-- =================== END FOOTER =================== -->

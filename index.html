@@ -1,0 +1,2542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OncoVita — Navbar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-obsidian font-body">
+
+<!-- ===================== NAVBAR ===================== -->
+<header
+  id="site-header"
+  class="fixed top-0 inset-x-0 z-50 border-b border-transparent bg-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
+>
+  <div class="mx-auto max-w-7xl px-6 lg:px-10">
+    <nav class="flex h-20 items-center justify-between" aria-label="Primary">
+
+      <!-- Logo / Brand -->
+      <a href="#" class="group flex flex-col leading-none focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-obsidian rounded-sm">
+        <span class="font-display italic text-2xl tracking-tight text-ivory">
+          Onco<span class="text-blue-600 not-italic">Vita</span>
+        </span>
+        <span class="hidden sm:block font-mono text-[10px] uppercase tracking-[0.18em] text-mute mt-1">
+          Dr. Arham Khalid &middot; Consultant Oncologist
+        </span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="hidden lg:flex items-center gap-10">
+
+        <li><a href="index.html" class="relative py-2 font-body text-sm text-mist transition-colors duration-200 hover:text-blue-400 focus:outline-none focus-visible:text-blue-400 group">Home<span class="absolute left-0 -bottom-0.5 h-px w-0 bg-blue-600 transition-all duration-300 ease-out group-hover:w-full"></span></a></li>
+
+        <li><a href="about.html" class="relative py-2 font-body text-sm text-mist transition-colors duration-200 hover:text-blue-400 focus:outline-none focus-visible:text-blue-400 group">About<span class="absolute left-0 -bottom-0.5 h-px w-0 bg-blue-600 transition-all duration-300 ease-out group-hover:w-full"></span></a></li>
+
+        <li><a href="services.html" class="relative py-2 font-body text-sm text-mist transition-colors duration-200 hover:text-blue-400 focus:outline-none focus-visible:text-blue-400 group">Services<span class="absolute left-0 -bottom-0.5 h-px w-0 bg-blue-600 transition-all duration-300 ease-out group-hover:w-full"></span></a></li>
+
+        <li><a href="treatments.html" class="relative py-2 font-body text-sm text-mist transition-colors duration-200 hover:text-blue-400 focus:outline-none focus-visible:text-blue-400 group">Treatments<span class="absolute left-0 -bottom-0.5 h-px w-0 bg-blue-600 transition-all duration-300 ease-out group-hover:w-full"></span></a></li>
+
+        <li><a href="reviews.html" class="relative py-2 font-body text-sm text-mist transition-colors duration-200 hover:text-blue-400 focus:outline-none focus-visible:text-blue-400 group">Reviews<span class="absolute left-0 -bottom-0.5 h-px w-0 bg-blue-600 transition-all duration-300 ease-out group-hover:w-full"></span></a></li>
+
+        <li><a href="faq.html" class="relative py-2 font-body text-sm text-mist transition-colors duration-200 hover:text-blue-400 focus:outline-none focus-visible:text-blue-400 group">FAQ<span class="absolute left-0 -bottom-0.5 h-px w-0 bg-blue-600 transition-all duration-300 ease-out group-hover:w-full"></span></a></li>
+
+        <li><a href="contact.html" class="relative py-2 font-body text-sm text-mist transition-colors duration-200 hover:text-blue-400 focus:outline-none focus-visible:text-blue-400 group">Contact<span class="absolute left-0 -bottom-0.5 h-px w-0 bg-blue-600 transition-all duration-300 ease-out group-hover:w-full"></span></a></li>
+
+      </ul>
+
+      <!-- Desktop CTA -->
+      <a
+        href="contact.html"
+        class="hidden lg:inline-flex items-center rounded-[10px] bg-blue-600 px-6 py-2.5 font-body text-sm font-semibold text-white shadow-[0_0_32px_0_rgba(59,130,246,0.20)] transition-all duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:bg-blue-500 hover:shadow-[0_0_35px_rgba(59,130,246,0.45)] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-obsidian"
+      >
+        Book Consultation
+      </a>
+
+      <!-- Mobile Hamburger -->
+      <button
+        id="menu-toggle"
+        type="button"
+        class="lg:hidden relative flex h-10 w-10 items-center justify-center rounded-[10px] border border-hairline text-ivory focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span class="sr-only">Open main menu</span>
+        <span class="relative block h-4 w-5" aria-hidden="true">
+          <span id="bar-1" class="absolute left-0 top-0 h-[1.5px] w-5 bg-ivory transition-all duration-300"></span>
+          <span id="bar-2" class="absolute left-0 top-[7px] h-[1.5px] w-5 bg-ivory transition-all duration-300"></span>
+          <span id="bar-3" class="absolute left-0 top-[14px] h-[1.5px] w-5 bg-ivory transition-all duration-300"></span>
+        </span>
+      </button>
+
+    </nav>
+  </div>
+
+  <!-- Mobile Menu Panel -->
+  <div
+    id="mobile-menu"
+    class="lg:hidden max-h-0 overflow-hidden border-t border-transparent bg-charcoal/70 backdrop-blur-xl transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
+  >
+    <ul class="flex flex-col gap-1 px-6 py-6">
+      <li><a href="index.html" class="block rounded-sm py-3 font-body text-base text-mist">Home</a></li>
+      <li><a href="about.html" class="block rounded-sm py-3 font-body text-base text-mist">About</a></li>
+      <li><a href="services.html" class="block rounded-sm py-3 font-body text-base text-mist">Services</a></li>
+      <li><a href="treatments.html" class="block rounded-sm py-3 font-body text-base text-mist">Treatments</a></li>
+      <li><a href="reviews.html" class="block rounded-sm py-3 font-body text-base text-mist">Reviews</a></li>
+      <li><a href="faq.html" class="block rounded-sm py-3 font-body text-base text-mist">FAQ</a></li>
+      <li><a href="contact.html" class="block rounded-sm py-3 font-body text-base text-mist">Contact</a></li>
+    </ul>
+
+    <div class="px-6 pb-6">
+      <a
+        href="#"
+        class="inline-flex w-full items-center justify-center rounded-[10px] bg-blue-600 px-6 py-3 font-body text-sm font-semibold text-white shadow-[0_0_32px_0_rgba(59,130,246,0.20)] transition-all duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:bg-blue-500 hover:shadow-[0_0_35px_rgba(59,130,246,0.45)] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-obsidian"
+      >
+        Book Consultation
+      </a>
+    </div>
+
+  </div>
+</header>
+<!-- =================== END NAVBAR =================== -->
+
+<script>
+  // Sticky navbar: transparent at top, glass + darker on scroll
+  const header = document.getElementById('site-header');
+  const onScroll = () => {
+    if (window.scrollY > 40) {
+      header.classList.remove('bg-transparent', 'border-transparent');
+      header.classList.add('bg-obsidian/80', 'backdrop-blur-xl', 'border-hairline', 'shadow-[0_8px_40px_-8px_rgba(0,0,0,0.6)]');
+    } else {
+      header.classList.add('bg-transparent', 'border-transparent');
+      header.classList.remove('bg-obsidian/80', 'backdrop-blur-xl', 'border-hairline', 'shadow-[0_8px_40px_-8px_rgba(0,0,0,0.6)]');
+    }
+  };
+  window.addEventListener('scroll', onScroll);
+  onScroll();
+
+  // Mobile menu toggle with hamburger -> X animation
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const bar1 = document.getElementById('bar-1');
+  const bar2 = document.getElementById('bar-2');
+  const bar3 = document.getElementById('bar-3');
+  let menuOpen = false;
+
+  menuToggle.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    menuToggle.setAttribute('aria-expanded', String(menuOpen));
+
+    if (menuOpen) {
+      mobileMenu.classList.remove('max-h-0');
+      mobileMenu.classList.add('max-h-[28rem]', 'border-hairline');
+      bar1.style.transform = 'translateY(7px) rotate(45deg)';
+      bar2.style.opacity = '0';
+      bar3.style.transform = 'translateY(-7px) rotate(-45deg)';
+    } else {
+      mobileMenu.classList.add('max-h-0');
+      mobileMenu.classList.remove('max-h-[28rem]', 'border-hairline');
+      bar1.style.transform = 'none';
+      bar2.style.opacity = '1';
+      bar3.style.transform = 'none';
+    }
+  });
+
+  // Close mobile menu when a link is clicked
+  mobileMenu.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (menuOpen) menuToggle.click();
+    });
+  });
+</script>
+
+</body>
+</html>
+
+<title>OncoVita — Hero</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          obsidian: '#0A0B0D',
+          charcoal: '#14161A',
+          charcoal2: '#1C1F24',
+          hairline: '#2A2D33',
+          gold: { 300: '#E4C888', 500: '#C9A15C', 700: '#8F7038' },
+          teal: { 300: '#5FA793', 500: '#2E7D6B' },
+          oxblood: '#7A2B38',
+          ivory: '#F2EEE6',
+          mist: '#B8BAC0',
+          mute: '#6E7177',
+        },
+        fontFamily: {
+          display: ['Fraunces', 'serif'],
+          body: ['Manrope', 'sans-serif'],
+          mono: ['"IBM Plex Mono"', 'monospace'],
+        },
+        boxShadow: {
+          glowGold: '0 0 32px 0 rgba(201,161,92,0.25), 0 0 8px 0 rgba(201,161,92,0.4)',
+          glowTeal: '0 0 32px 0 rgba(46,125,107,0.22)',
+        },
+        keyframes: {
+          pulseGlow: {
+            '0%, 100%': { opacity: '0.55', transform: 'scale(1)' },
+            '50%': { opacity: '1', transform: 'scale(1.06)' },
+          },
+          driftSlow: {
+            '0%, 100%': { transform: 'translate(0px, 0px)' },
+            '50%': { transform: 'translate(20px, -24px)' },
+          },
+          fadeInUp: {
+            '0%': { opacity: '0', transform: 'translateY(24px)' },
+            '100%': { opacity: '1', transform: 'translateY(0)' },
+          },
+        },
+        animation: {
+          pulseGlow: 'pulseGlow 8s ease-in-out infinite',
+          driftSlow: 'driftSlow 14s ease-in-out infinite',
+          fadeInUp: 'fadeInUp 0.9s cubic-bezier(0.22,1,0.36,1) both',
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-obsidian">
+   <!-- ===================== HERO ===================== -->
+<section id="home" class="relative min-h-screen w-full overflow-hidden bg-[#030712] flex items-center" aria-label="Hero">
+
+  <!-- Animated Background -->
+  <div class="pointer-events-none absolute inset-0" aria-hidden="true">
+
+    <!-- Base Gradient -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_85%_65%_at_50%_0%,rgba(15,23,42,0.95),rgba(3,7,18,1)_75%)]"></div>
+
+    <!-- Navy Glow -->
+    <div class="absolute left-1/2 top-1/2 h-[38rem] w-[38rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(37,99,235,0.12)_0%,rgba(37,99,235,0.04)_45%,transparent_72%)] blur-3xl motion-safe:animate-pulseGlow"></div>
+
+    <!-- Deep Blue Glow -->
+    <div class="absolute -right-24 top-1/3 h-[28rem] w-[28rem] rounded-full bg-[radial-gradient(circle,rgba(30,64,175,0.16)_0%,transparent_70%)] blur-3xl motion-safe:animate-driftSlow"></div>
+
+    <!-- White Ambient Glow -->
+    <div class="absolute -left-32 bottom-0 h-[24rem] w-[24rem] rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.05)_0%,transparent_70%)] blur-3xl motion-safe:animate-driftSlow [animation-delay:3s]"></div>
+
+    <!-- Grid -->
+    <div class="absolute inset-0 opacity-[0.04] bg-[linear-gradient(rgba(255,255,255,0.45)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.45)_1px,transparent_1px)] bg-[size:72px_72px]"></div>
+
+    <!-- Noise -->
+    <div class="absolute inset-0 opacity-[0.02] bg-[url('https://www.transparenttextures.com/patterns/noise.png')]"></div>
+
+    <!-- Vignette -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_100%_100%_at_50%_50%,transparent_45%,rgba(3,7,18,0.85)_100%)]"></div>
+
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 mx-auto w-full max-w-5xl px-6 py-32 text-center lg:px-10">
+
+    <!-- Eyebrow -->
+    <p
+      class="motion-safe:animate-fadeInUp mb-6 inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-blue-300 backdrop-blur-xl"
+      style="animation-delay:0ms"
+    >
+      <span class="h-2 w-2 rounded-full bg-blue-400 shadow-[0_0_14px_rgba(96,165,250,.8)]"></span>
+      Pakistan's Leading Oncologist
+    </p>
+
+    <!-- Heading -->
+    <h1
+      class="motion-safe:animate-fadeInUp font-display text-4xl leading-[1.05] text-white sm:text-5xl md:text-6xl lg:text-7xl"
+      style="animation-delay:120ms"
+    >
+      <span class="font-normal italic text-blue-400">Precision</span>
+      Care for Every Cancer Patient
+    </h1>
+
+    <!-- Description -->
+    <p
+      class="motion-safe:animate-fadeInUp mx-auto mt-8 max-w-2xl font-body text-base leading-relaxed text-slate-300 sm:text-lg"
+      style="animation-delay:240ms"
+    >
+      Dr. Arham Khalid — MBBS, FCPS (Oncology), PhD — brings world-class cancer treatment to Pakistan with compassion, cutting-edge diagnostics, and a patient-first approach.
+    </p>
+
+    <!-- Buttons -->
+    <div
+      class="motion-safe:animate-fadeInUp mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row"
+      style="animation-delay:360ms"
+    >
+
+      <a
+        href="contact.html"
+        class="inline-flex w-full items-center justify-center rounded-xl bg-blue-600 px-8 py-3.5 font-body text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-blue-500 hover:shadow-[0_15px_40px_rgba(37,99,235,.35)] sm:w-auto"
+      >
+        Book Consultation
+      </a>
+
+      <a
+        href="about.html"
+        class="inline-flex w-full items-center justify-center rounded-xl border border-white/10 bg-white/5 px-8 py-3.5 font-body text-sm font-semibold text-white backdrop-blur-xl transition-all duration-300 hover:border-blue-400 hover:bg-white/10 hover:text-blue-300 sm:w-auto"
+      >
+        Learn More
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- =================== END HERO =================== -->
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="relative w-full overflow-hidden bg-[#030712] py-24 lg:py-40" aria-label="About the Doctor">
+
+  <!-- Ambient Background -->
+  <div class="pointer-events-none absolute inset-0" aria-hidden="true">
+
+    <!-- Navy Glow -->
+    <div class="absolute -left-40 top-1/4 h-[28rem] w-[28rem] rounded-full bg-[radial-gradient(circle,rgba(37,99,235,0.12)_0%,transparent_70%)] blur-3xl"></div>
+
+    <!-- Blue Glow -->
+    <div class="absolute -right-40 bottom-0 h-[24rem] w-[24rem] rounded-full bg-[radial-gradient(circle,rgba(30,64,175,0.12)_0%,transparent_70%)] blur-3xl"></div>
+
+    <!-- Luxury Grid -->
+    <div class="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(255,255,255,.45)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.45)_1px,transparent_1px)] bg-[size:72px_72px]"></div>
+
+  </div>
+
+  <div class="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 px-6 lg:grid-cols-2 lg:gap-20 lg:px-10">
+
+    <!-- ===== Image ===== -->
+    <div class="relative order-1 mx-auto w-full max-w-md [perspective:1200px] lg:max-w-none">
+
+      <!-- Glow -->
+      <div class="absolute inset-6 -z-10 rounded-hero bg-[radial-gradient(circle,rgba(96,165,250,.18)_0%,transparent_70%)] blur-3xl"></div>
+
+      <!-- Image Card -->
+      <div class="group relative rounded-hero border border-white/10 bg-[#111827]/70 p-2 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-blue-400/40">
+
+        <!-- Corner -->
+        <span class="absolute left-4 top-4 h-6 w-6 border-l border-t border-blue-400/70"></span>
+        <span class="absolute bottom-4 right-4 h-6 w-6 border-b border-r border-blue-400/70"></span>
+
+        <div class="overflow-hidden rounded-[calc(theme(borderRadius.hero)-8px)]">
+
+          <img
+            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=700&q=80"
+            alt="Dr. Arham Khalid"
+            class="aspect-[4/5] w-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+
+        </div>
+
+      </div>
+
+      <!-- Floating Card -->
+      <div class="absolute -bottom-6 left-1/2 w-max -translate-x-1/2 rounded-card border border-white/10 bg-[#111827]/80 px-6 py-4 text-center backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 sm:left-auto sm:-right-6 sm:translate-x-0">
+
+        <p class="font-display text-2xl text-blue-300">
+          PhD
+        </p>
+
+        <p class="mt-1 font-mono text-[10px] uppercase tracking-[0.16em] text-slate-400">
+          Oncology Research
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- ===== Content ===== -->
+    <div>
+
+      <!-- Badge -->
+      <p class="mb-6 inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-blue-300 backdrop-blur-xl">
+
+        <span class="h-2 w-2 rounded-full bg-blue-400 shadow-[0_0_14px_rgba(96,165,250,.8)]"></span>
+
+        About the Doctor
+
+      </p>
+
+      <!-- Heading -->
+      <h2 class="font-display text-4xl leading-[1.1] text-white sm:text-5xl">
+
+        Dr. Arham Khalid
+
+      </h2>
+
+      <!-- Description -->
+      <div class="mt-8 space-y-5 font-body text-base leading-relaxed text-slate-300 sm:text-lg">
+
+        <p>
+          Dr. Arham Khalid is one of Pakistan's most distinguished oncologists,
+          combining international training with a deep commitment to local
+          patient care. With fellowships from leading cancer institutes in the
+          UK and USA, he brings global expertise to every consultation.
+        </p>
+
+        <p>
+          His approach integrates the latest in immunotherapy, targeted therapy,
+          and personalized medicine — ensuring every patient receives care
+          tailored to their unique biology and circumstances.
+        </p>
+
+        <p>
+          Beyond clinical work, Dr. Khalid is an active researcher and public
+          educator, working to raise cancer awareness across Pakistan and reduce
+          diagnosis delays.
+        </p>
+
+      </div>
+
+      <!-- Credentials -->
+      <ul class="mt-10 flex flex-col gap-3 border-t border-white/10 pt-8">
+
+        <li class="flex items-center gap-3 font-mono text-sm text-slate-300">
+          <span class="h-2 w-2 rounded-full bg-blue-400"></span>
+          MBBS &middot; FCPS &middot; PhD
+        </li>
+
+        <li class="flex items-center gap-3 font-mono text-sm text-slate-300">
+          <span class="h-2 w-2 rounded-full bg-blue-400"></span>
+          Harvard Medical &ndash; Oncology Fellowship
+        </li>
+
+        <li class="flex items-center gap-3 font-mono text-sm text-slate-300">
+          <span class="h-2 w-2 rounded-full bg-blue-400"></span>
+          SHOC &middot; PMDC Certified Member
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+</section>
+<!-- =================== END ABOUT =================== -->
+
+
+<!-- ===================== SERVICES (PART 1) ===================== -->
+<section id="services" class="relative w-full overflow-hidden bg-[#030712] py-24 lg:py-32" aria-label="Our Expertise">
+
+  <!-- Ambient Background -->
+  <div class="pointer-events-none absolute inset-0" aria-hidden="true">
+
+    <div class="absolute -left-32 top-10 h-[26rem] w-[26rem] rounded-full bg-[radial-gradient(circle,rgba(37,99,235,0.12)_0%,transparent_70%)] blur-3xl motion-safe:animate-driftSlow"></div>
+
+    <div class="absolute -right-24 bottom-0 h-[24rem] w-[24rem] rounded-full bg-[radial-gradient(circle,rgba(30,64,175,0.12)_0%,transparent_70%)] blur-3xl motion-safe:animate-driftSlow [animation-delay:4s]"></div>
+
+    <div class="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(255,255,255,.4)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.4)_1px,transparent_1px)] bg-[size:72px_72px]"></div>
+
+  </div>
+
+  <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-10">
+
+    <!-- Header -->
+    <div class="mb-16 flex flex-col items-start justify-between gap-8 motion-safe:animate-fadeInUp sm:flex-row sm:items-end">
+
+      <div>
+
+        <p class="mb-6 inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-blue-300 backdrop-blur-xl">
+
+          <span class="h-2 w-2 rounded-full bg-blue-400 shadow-[0_0_15px_rgba(96,165,250,.6)]"></span>
+
+          Our Expertise
+
+        </p>
+
+        <h2 class="font-display text-4xl leading-[1.1] text-white sm:text-5xl">
+
+          Specialized Services
+
+        </h2>
+
+      </div>
+
+      <a href="#" class="group inline-flex items-center gap-2 text-sm font-semibold text-white transition hover:text-blue-300">
+
+        View All
+
+        <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+
+      </a>
+
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-6 lg:[grid-auto-flow:dense]">
+
+      <!-- Featured -->
+      <div class="group relative sm:col-span-2 lg:col-span-3 lg:row-span-2 [perspective:1200px]">
+
+        <div class="relative flex h-full min-h-[26rem] flex-col justify-between overflow-hidden rounded-hero border border-white/10 bg-[#111827]/70 p-10 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-blue-400/40 hover:shadow-[0_30px_70px_rgba(37,99,235,.20)]">
+
+          <div>
+
+            <div class="mb-8 flex items-center justify-between">
+
+              <span class="font-mono text-xs uppercase tracking-[0.16em] text-slate-400">
+
+                01 · Start Here
+
+              </span>
+
+              <div class="relative flex h-16 w-16 items-center justify-center">
+
+                <span class="absolute inset-0 rounded-full bg-blue-500/20 blur-xl animate-pulseGlow"></span>
+
+                <span class="relative flex h-16 w-16 items-center justify-center rounded-full border border-white/10 bg-[#1E293B]/80 text-blue-300">
+
+                  <svg viewBox="0 0 24 24" fill="none" class="h-7 w-7" stroke="currentColor" stroke-width="1.5">
+
+                    <circle cx="12" cy="12" r="8"/>
+
+                    <circle cx="12" cy="12" r="3.5"/>
+
+                    <circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/>
+
+                    <path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>
+
+                  </svg>
+
+                </span>
+
+              </div>
+
+            </div>
+
+            <h3 class="font-display text-3xl text-white sm:text-4xl">
+
+              Cancer Diagnosis &amp; Staging
+
+            </h3>
+
+            <p class="mt-5 max-w-md leading-relaxed text-slate-300">
+
+              Comprehensive multi-modal diagnostic workup including biopsy,
+              molecular profiling, PET/CT staging, and tumor board review.
+
+            </p>
+
+          </div>
+
+          <a href="#" class="inline-flex items-center gap-2 border-t border-white/10 pt-6 text-sm font-semibold text-blue-300 hover:text-blue-400">
+
+            Learn More →
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Card 02 -->
+      <div class="group relative sm:col-span-2 lg:col-span-3">
+
+        <div class="relative flex h-full flex-col justify-between rounded-card border border-white/10 bg-[#111827]/70 p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-blue-400/40 hover:shadow-[0_25px_60px_rgba(37,99,235,.20)]">
+
+          <div>
+
+            <div class="mb-6 flex items-center justify-between">
+
+              <span class="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-[#1E293B]/80 text-blue-300">
+
+                🧬
+
+              </span>
+
+              <span class="font-mono text-xs uppercase tracking-[0.16em] text-slate-400">
+
+                02
+
+              </span>
+
+            </div>
+
+            <h3 class="text-xl font-semibold text-white">
+
+              Medical Oncology
+
+            </h3>
+
+            <p class="mt-3 text-sm leading-relaxed text-slate-300">
+
+              Evidence-based chemotherapy regimens, oral targeted agents,
+              and systemic anti-cancer treatment tailored to every patient.
+
+            </p>
+
+          </div>
+
+          <span class="mt-6 text-xs uppercase tracking-[0.15em] text-blue-300">
+
+            Explore →
+
+          </span>
+
+        </div>
+
+      </div>
+
+      <!-- Card 03 -->
+      <div class="group relative lg:col-span-2">
+
+        <div class="relative flex h-full flex-col justify-between rounded-card border border-white/10 bg-[#111827]/70 p-7 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-blue-400/40 hover:shadow-[0_25px_60px_rgba(37,99,235,.20)]">
+
+          <div>
+
+            <div class="mb-5 flex items-center justify-between">
+
+              <span class="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-[#1E293B]/80 text-blue-300">
+
+                🛡️
+
+              </span>
+
+              <span class="font-mono text-xs text-slate-400">
+
+                03
+
+              </span>
+
+            </div>
+
+            <h3 class="text-lg font-semibold text-white">
+
+              Immunotherapy
+
+            </h3>
+
+            <p class="mt-3 text-sm leading-relaxed text-slate-300">
+
+              Cutting-edge checkpoint inhibitors and immunotherapeutic
+              protocols for eligible patients.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+            <!-- Card 04 -->
+      <div class="group relative lg:col-span-2">
+
+        <div class="relative flex h-full flex-col justify-between rounded-card border border-white/10 bg-[#111827]/70 p-7 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-blue-400/40 hover:shadow-[0_25px_60px_rgba(37,99,235,.20)]">
+
+          <div>
+
+            <div class="mb-5 flex items-center justify-between">
+
+              <span class="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-[#1E293B]/80 text-blue-300">
+                🎯
+              </span>
+
+              <span class="font-mono text-xs text-slate-400">
+                04
+              </span>
+
+            </div>
+
+            <h3 class="text-lg font-semibold text-white">
+              Targeted Therapy
+            </h3>
+
+            <p class="mt-3 text-sm leading-relaxed text-slate-300">
+              Precision medicines based on genetic profiling to improve
+              treatment outcomes with fewer side effects.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Card 05 -->
+      <div class="group relative lg:col-span-2">
+
+        <div class="relative flex h-full flex-col justify-between rounded-card border border-white/10 bg-[#111827]/70 p-7 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-blue-400/40 hover:shadow-[0_25px_60px_rgba(37,99,235,.20)]">
+
+          <div>
+
+            <div class="mb-5 flex items-center justify-between">
+
+              <span class="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-[#1E293B]/80 text-blue-300">
+                ❤️
+              </span>
+
+              <span class="font-mono text-xs text-slate-400">
+                05
+              </span>
+
+            </div>
+
+            <h3 class="text-lg font-semibold text-white">
+              Supportive Care
+            </h3>
+
+            <p class="mt-3 text-sm leading-relaxed text-slate-300">
+              Nutritional guidance, pain management, rehabilitation,
+              psychological support, and survivorship planning.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Card 06 -->
+      <div class="group relative sm:col-span-2 lg:col-span-6">
+
+        <div class="relative overflow-hidden rounded-hero border border-white/10 bg-[#111827]/70 p-10 backdrop-blur-xl transition-all duration-500 hover:border-blue-400/40 hover:shadow-[0_35px_80px_rgba(37,99,235,.18)]">
+
+          <div class="absolute right-0 top-0 h-56 w-56 rounded-full bg-[radial-gradient(circle,rgba(59,130,246,.12)_0%,transparent_70%)] blur-3xl"></div>
+
+          <div class="relative z-10 flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
+
+            <div>
+
+              <span class="font-mono text-xs uppercase tracking-[0.18em] text-blue-300">
+                Comprehensive Cancer Care
+              </span>
+
+              <h3 class="mt-4 font-display text-3xl text-white sm:text-4xl">
+                Personalized Treatment Plans For Every Patient
+              </h3>
+
+              <p class="mt-5 max-w-3xl leading-relaxed text-slate-300">
+                Every patient receives an individualized treatment strategy
+                developed using evidence-based medicine, multidisciplinary
+                collaboration, and compassionate clinical care from diagnosis
+                through recovery.
+              </p>
+
+            </div>
+
+            <a href="contact.html"
+               class="inline-flex items-center justify-center rounded-xl bg-blue-600 px-8 py-4 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-blue-500 hover:shadow-[0_20px_45px_rgba(37,99,235,.35)]">
+
+              Book Consultation
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- =================== END SERVICES =================== -->
+
+
+
+
+<!-- ===================== TREATMENT AREAS (PART 1) ===================== -->
+<section id="treatments" class="relative w-full overflow-hidden bg-[#030712] py-24 lg:py-32" aria-label="Treatment Areas">
+
+  <!-- Ambient Background -->
+  <div class="pointer-events-none absolute inset-0" aria-hidden="true">
+
+    <div class="absolute -left-32 bottom-10 h-[26rem] w-[26rem] rounded-full bg-[radial-gradient(circle,rgba(37,99,235,.12)_0%,transparent_70%)] blur-3xl motion-safe:animate-driftSlow"></div>
+
+    <div class="absolute -right-24 top-0 h-[24rem] w-[24rem] rounded-full bg-[radial-gradient(circle,rgba(30,64,175,.12)_0%,transparent_70%)] blur-3xl motion-safe:animate-driftSlow [animation-delay:4s]"></div>
+
+    <div class="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(255,255,255,.45)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.45)_1px,transparent_1px)] bg-[size:72px_72px]"></div>
+
+    <!-- Floating Particles -->
+    <span class="absolute left-[12%] top-[18%] h-1.5 w-1.5 rounded-full bg-blue-400/50 blur-[1px] motion-safe:animate-driftSlow [animation-duration:9s]"></span>
+
+    <span class="absolute left-[28%] top-[62%] h-1 w-1 rounded-full bg-blue-500/50 blur-[1px] motion-safe:animate-driftSlow [animation-duration:11s] [animation-delay:1.5s]"></span>
+
+    <span class="absolute left-[52%] top-[10%] h-1 w-1 rounded-full bg-blue-300/40 blur-[1px] motion-safe:animate-driftSlow [animation-duration:13s] [animation-delay:2.5s]"></span>
+
+    <span class="absolute left-[70%] top-[75%] h-1.5 w-1.5 rounded-full bg-blue-500/40 blur-[1px] motion-safe:animate-driftSlow [animation-duration:10s] [animation-delay:.8s]"></span>
+
+    <span class="absolute left-[85%] top-[30%] h-1 w-1 rounded-full bg-blue-400/50 blur-[1px] motion-safe:animate-driftSlow [animation-duration:8s] [animation-delay:3s]"></span>
+
+    <span class="absolute left-[40%] top-[85%] h-1 w-1 rounded-full bg-blue-300/30 blur-[1px] motion-safe:animate-driftSlow [animation-duration:12s] [animation-delay:2s]"></span>
+
+  </div>
+
+  <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-10">
+
+    <!-- Header -->
+    <div class="mb-16 max-w-2xl motion-safe:animate-fadeInUp">
+
+      <p class="mb-6 inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-blue-300 backdrop-blur-xl">
+
+        <span class="h-2 w-2 rounded-full bg-blue-400 shadow-[0_0_15px_rgba(96,165,250,.6)]"></span>
+
+        Treatment Areas
+
+      </p>
+
+      <h2 class="font-display text-4xl leading-[1.1] text-white sm:text-5xl">
+
+        Cancer Types We Treat
+
+      </h2>
+
+      <p class="mt-5 font-body text-base leading-relaxed text-slate-300 sm:text-lg">
+
+        Hover over each treatment area to explore specialized care.
+
+      </p>
+
+    </div>
+
+    <!-- Bento Grid -->
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-6 lg:[grid-auto-flow:dense]">
+
+      <!-- Featured -->
+      <div class="group relative sm:col-span-2 lg:col-span-3 lg:row-span-2 [perspective:1200px] motion-safe:animate-fadeInUp">
+
+        <div class="absolute -inset-px rounded-hero bg-[conic-gradient(from_0deg,transparent_0%,rgba(59,130,246,.6)_12%,transparent_28%)] opacity-0 blur-[1px] transition-opacity duration-700 group-hover:opacity-100 motion-safe:group-hover:animate-spin [animation-duration:5s]"></div>
+
+        <div class="relative flex h-full min-h-[26rem] flex-col overflow-hidden rounded-hero border border-white/10 bg-[#111827]/70 p-10 backdrop-blur-xl transition-all duration-500 group-hover:-translate-y-2 group-hover:border-blue-400/40 group-hover:shadow-[0_25px_60px_rgba(37,99,235,.22)]">
+
+          <svg viewBox="0 0 24 24" fill="none" class="pointer-events-none absolute -bottom-8 -right-8 h-60 w-60 text-blue-400/[0.05]" stroke="currentColor" stroke-width="1">
+            <path d="M12 3v4"/>
+            <path d="M10 7c-2 0-5 1.5-5 6 0 4 1.5 8 3.5 8 1.5 0 2-1.5 2-4V7Z"/>
+            <path d="M14 7c2 0 5 1.5 5 6 0 4-1.5 8-3.5 8-1.5 0-2-1.5-2-4V7Z"/>
+          </svg>
+
+          <span class="absolute left-6 top-6 h-6 w-6 border-l border-t border-blue-400/0 transition-colors duration-500 group-hover:border-blue-400/70"></span>
+
+          <span class="absolute bottom-6 right-6 h-6 w-6 border-b border-r border-blue-400/0 transition-colors duration-500 group-hover:border-blue-400/70"></span>
+
+          <div class="mb-8 flex items-center justify-between">
+
+            <span class="font-mono text-xs uppercase tracking-[0.16em] text-slate-400">
+
+              Most Diagnosed
+
+            </span>
+
+            <div class="relative flex h-16 w-16 items-center justify-center">
+
+              <span class="absolute inset-0 rounded-full bg-blue-500/20 blur-xl motion-safe:animate-pulseGlow"></span>
+
+              <span class="relative flex h-16 w-16 items-center justify-center rounded-full border border-blue-400/30 bg-[#1E293B]/80 text-blue-300">
+
+                <!-- SVG SAME -->
+
+              </span>
+
+            </div>
+
+          </div>
+
+          <h3 class="font-display text-3xl leading-tight text-white sm:text-4xl">
+
+            Lung Cancer
+
+          </h3>
+
+          <div class="mt-4 max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover:mt-5 group-hover:max-h-32 group-hover:opacity-100">
+
+            <p class="max-w-md font-body text-base leading-relaxed text-slate-300">
+
+              NSCLC &amp; SCLC, targeted therapy for EGFR/ALK mutations, immunotherapy, and comprehensive staging.
+
+            </p>
+
+          </div>
+
+          <div class="mt-auto flex items-center gap-2 border-t border-white/10 pt-6 font-body text-sm font-semibold text-blue-300">
+
+            Explore care pathway
+
+            <span class="transition-transform duration-300 group-hover:translate-x-1.5">
+
+              →
+
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+            <!-- ===== Blood Cancers (Wide) ===== -->
+      <div class="group relative sm:col-span-2 lg:col-span-3 [perspective:1200px] motion-safe:animate-fadeInUp" style="animation-delay:100ms">
+
+        <div class="absolute -inset-px rounded-card bg-[conic-gradient(from_0deg,transparent_0%,rgba(59,130,246,.65)_12%,transparent_28%)] opacity-0 blur-[1px] transition-opacity duration-700 group-hover:opacity-100 motion-safe:group-hover:animate-spin [animation-duration:5s]"></div>
+
+        <div class="relative flex h-full flex-col overflow-hidden rounded-card border border-white/10 bg-[#111827]/70 p-8 backdrop-blur-xl transition-all duration-500 group-hover:-translate-y-2 group-hover:border-blue-400/40 group-hover:shadow-[0_25px_60px_rgba(37,99,235,.22)]">
+
+          <span class="absolute left-4 top-4 h-5 w-5 border-l border-t border-blue-400/0 transition-colors duration-500 group-hover:border-blue-400/70"></span>
+
+          <span class="absolute bottom-4 right-4 h-5 w-5 border-b border-r border-blue-400/0 transition-colors duration-500 group-hover:border-blue-400/70"></span>
+
+          <div class="mb-6 flex items-center justify-between">
+
+            <div class="relative flex h-12 w-12 items-center justify-center">
+
+              <span class="absolute inset-0 rounded-full bg-blue-500/20 blur-lg motion-safe:animate-pulseGlow"></span>
+
+              <span class="relative flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-[#1E293B]/80 text-blue-300">
+
+                <!-- SVG SAME -->
+
+              </span>
+
+            </div>
+
+          </div>
+
+          <h3 class="font-body text-xl font-semibold text-white">
+            Blood Cancers
+          </h3>
+
+          <div class="mt-2 max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover:mt-3 group-hover:max-h-28 group-hover:opacity-100">
+
+            <p class="font-body text-sm leading-relaxed text-slate-300">
+              Leukemia, lymphoma, and myeloma with modern chemotherapy,
+              targeted therapy and transplant coordination.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ===== Breast Cancer ===== -->
+      <div class="group relative lg:col-span-1 [perspective:1200px] motion-safe:animate-fadeInUp" style="animation-delay:160ms">
+
+        <div class="absolute -inset-px rounded-card bg-[conic-gradient(from_0deg,transparent_0%,rgba(59,130,246,.65)_14%,transparent_30%)] opacity-0 blur-[1px] transition-opacity duration-700 group-hover:opacity-100 motion-safe:group-hover:animate-spin [animation-duration:5s]"></div>
+
+        <div class="relative flex h-full min-h-[13rem] flex-col overflow-hidden rounded-card border border-white/10 bg-[#111827]/70 p-6 backdrop-blur-xl transition-all duration-500 group-hover:-translate-y-2 group-hover:border-blue-400/40 group-hover:shadow-[0_25px_60px_rgba(37,99,235,.22)]">
+
+          <span class="absolute left-3 top-3 h-4 w-4 border-l border-t border-blue-400/0 transition-colors duration-500 group-hover:border-blue-400/70"></span>
+
+          <span class="absolute bottom-3 right-3 h-4 w-4 border-b border-r border-blue-400/0 transition-colors duration-500 group-hover:border-blue-400/70"></span>
+
+          <div class="relative mb-4 flex h-10 w-10 items-center justify-center">
+
+            <span class="absolute inset-0 rounded-full bg-blue-500/20 blur-md motion-safe:animate-pulseGlow"></span>
+
+            <span class="relative flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-[#1E293B]/80 text-blue-300">
+
+              <!-- SVG SAME -->
+
+            </span>
+
+          </div>
+
+          <h3 class="font-body text-base font-semibold text-white">
+            Breast Cancer
+          </h3>
+
+          <div class="mt-2 max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover:max-h-28 group-hover:opacity-100">
+
+            <p class="font-body text-xs leading-relaxed text-slate-300">
+              HER2+, triple-negative and hormone receptor-positive breast
+              cancer with personalized treatment.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ===== GI Cancers ===== -->
+      <div class="group relative lg:col-span-1 [perspective:1200px] motion-safe:animate-fadeInUp" style="animation-delay:220ms">
+
+        <div class="absolute -inset-px rounded-card bg-[conic-gradient(from_0deg,transparent_0%,rgba(59,130,246,.65)_14%,transparent_30%)] opacity-0 blur-[1px] transition-opacity duration-700 group-hover:opacity-100 motion-safe:group-hover:animate-spin [animation-duration:5s]"></div>
+
+        <div class="relative flex h-full min-h-[13rem] flex-col overflow-hidden rounded-card border border-white/10 bg-[#111827]/70 p-6 backdrop-blur-xl transition-all duration-500 group-hover:-translate-y-2 group-hover:border-blue-400/40 group-hover:shadow-[0_25px_60px_rgba(37,99,235,.22)]">
+
+          <span class="absolute left-3 top-3 h-4 w-4 border-l border-t border-blue-400/0 transition-colors duration-500 group-hover:border-blue-400/70"></span>
+
+          <span class="absolute bottom-3 right-3 h-4 w-4 border-b border-r border-blue-400/0 transition-colors duration-500 group-hover:border-blue-400/70"></span>
+
+          <div class="relative mb-4 flex h-10 w-10 items-center justify-center">
+
+            <span class="absolute inset-0 rounded-full bg-blue-500/20 blur-md motion-safe:animate-pulseGlow"></span>
+
+            <span class="relative flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-[#1E293B]/80 text-blue-300">
+
+              <!-- SVG SAME -->
+
+            </span>
+
+          </div>
+
+          <h3 class="font-body text-base font-semibold text-white">
+            GI Cancers
+          </h3>
+
+          <div class="mt-2 max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover:max-h-28 group-hover:opacity-100">
+
+            <p class="font-body text-xs leading-relaxed text-slate-300">
+              Colorectal, gastric, liver, pancreatic and esophageal cancers
+              with multidisciplinary management.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+            <!-- ===== Brain Tumors ===== -->
+      <div class="group relative lg:col-span-1 [perspective:1200px] motion-safe:animate-fadeInUp" style="animation-delay:280ms">
+
+        <div class="absolute -inset-px rounded-card bg-[conic-gradient(from_0deg,transparent_0%,rgba(59,130,246,.65)_14%,transparent_30%)] opacity-0 blur-[1px] transition-opacity duration-700 group-hover:opacity-100 motion-safe:group-hover:animate-spin [animation-duration:5s]"></div>
+
+        <div class="relative flex h-full min-h-[13rem] flex-col overflow-hidden rounded-card border border-white/10 bg-[#111827]/70 p-6 backdrop-blur-xl transition-all duration-500 group-hover:-translate-y-2 group-hover:border-blue-400/40 group-hover:shadow-[0_25px_60px_rgba(37,99,235,.22)]">
+
+          <span class="absolute left-3 top-3 h-4 w-4 border-l border-t border-blue-400/0 transition-colors duration-500 group-hover:border-blue-400/70"></span>
+          <span class="absolute bottom-3 right-3 h-4 w-4 border-b border-r border-blue-400/0 transition-colors duration-500 group-hover:border-blue-400/70"></span>
+
+          <div class="relative mb-4 flex h-10 w-10 items-center justify-center">
+            <span class="absolute inset-0 rounded-full bg-blue-500/20 blur-md motion-safe:animate-pulseGlow"></span>
+            <span class="relative flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-[#1E293B]/80 text-blue-300">
+
+              <!-- SVG SAME -->
+
+            </span>
+          </div>
+
+          <h3 class="font-body text-base font-semibold text-white">
+            Brain Tumors
+          </h3>
+
+          <div class="mt-2 max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover:max-h-28 group-hover:opacity-100">
+            <p class="font-body text-xs leading-relaxed text-slate-300">
+              Glioblastoma, meningioma, metastatic brain disease in collaboration with neurosurgery and radiation oncology.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===== GU Cancers ===== -->
+      <div class="group relative lg:col-span-2 [perspective:1200px] motion-safe:animate-fadeInUp" style="animation-delay:340ms">
+
+        <div class="absolute -inset-px rounded-card bg-[conic-gradient(from_0deg,transparent_0%,rgba(59,130,246,.65)_12%,transparent_28%)] opacity-0 blur-[1px] transition-opacity duration-700 group-hover:opacity-100 motion-safe:group-hover:animate-spin [animation-duration:5s]"></div>
+
+        <div class="relative flex h-full flex-col overflow-hidden rounded-card border border-white/10 bg-[#111827]/70 p-7 backdrop-blur-xl transition-all duration-500 group-hover:-translate-y-2 group-hover:border-blue-400/40 group-hover:shadow-[0_25px_60px_rgba(37,99,235,.22)]">
+
+          <span class="absolute left-4 top-4 h-5 w-5 border-l border-t border-blue-400/0 transition-colors duration-500 group-hover:border-blue-400/70"></span>
+          <span class="absolute bottom-4 right-4 h-5 w-5 border-b border-r border-blue-400/0 transition-colors duration-500 group-hover:border-blue-400/70"></span>
+
+          <div class="relative mb-5 flex h-11 w-11 items-center justify-center">
+            <span class="absolute inset-0 rounded-full bg-blue-500/20 blur-lg motion-safe:animate-pulseGlow"></span>
+            <span class="relative flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-[#1E293B]/80 text-blue-300">
+
+              <!-- SVG SAME -->
+
+            </span>
+          </div>
+
+          <h3 class="font-body text-lg font-semibold text-white">
+            GU Cancers
+          </h3>
+
+          <div class="mt-2 max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover:mt-3 group-hover:max-h-28 group-hover:opacity-100">
+            <p class="font-body text-sm leading-relaxed text-slate-300">
+              Prostate, bladder, renal cell and testicular cancers with hormone therapy, immunotherapy and targeted agents.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===== Thyroid Cancer ===== -->
+      <div class="group relative lg:col-span-2 [perspective:1200px] motion-safe:animate-fadeInUp" style="animation-delay:400ms">
+
+        <div class="absolute -inset-px rounded-card bg-[conic-gradient(from_0deg,transparent_0%,rgba(59,130,246,.65)_12%,transparent_28%)] opacity-0 blur-[1px] transition-opacity duration-700 group-hover:opacity-100 motion-safe:group-hover:animate-spin [animation-duration:5s]"></div>
+
+        <div class="relative flex h-full flex-col overflow-hidden rounded-card border border-white/10 bg-[#111827]/70 p-7 backdrop-blur-xl transition-all duration-500 group-hover:-translate-y-2 group-hover:border-blue-400/40 group-hover:shadow-[0_25px_60px_rgba(37,99,235,.22)]">
+
+          <span class="absolute left-4 top-4 h-5 w-5 border-l border-t border-blue-400/0 transition-colors duration-500 group-hover:border-blue-400/70"></span>
+          <span class="absolute bottom-4 right-4 h-5 w-5 border-b border-r border-blue-400/0 transition-colors duration-500 group-hover:border-blue-400/70"></span>
+
+          <div class="relative mb-5 flex h-11 w-11 items-center justify-center">
+            <span class="absolute inset-0 rounded-full bg-blue-500/20 blur-lg motion-safe:animate-pulseGlow"></span>
+            <span class="relative flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-[#1E293B]/80 text-blue-300">
+
+              <!-- SVG SAME -->
+
+            </span>
+          </div>
+
+          <h3 class="font-body text-lg font-semibold text-white">
+            Thyroid Cancer
+          </h3>
+
+          <div class="mt-2 max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover:mt-3 group-hover:max-h-28 group-hover:opacity-100">
+            <p class="font-body text-sm leading-relaxed text-slate-300">
+              Differentiated and anaplastic thyroid cancer management with RAI, targeted therapy and endocrine coordination.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===== Unknown Primary ===== -->
+      <div class="group relative lg:col-span-2 [perspective:1200px] motion-safe:animate-fadeInUp" style="animation-delay:460ms">
+
+        <div class="absolute -inset-px rounded-card bg-[conic-gradient(from_0deg,transparent_0%,rgba(59,130,246,.65)_12%,transparent_28%)] opacity-0 blur-[1px] transition-opacity duration-700 group-hover:opacity-100 motion-safe:group-hover:animate-spin [animation-duration:5s]"></div>
+
+        <div class="relative flex h-full flex-col overflow-hidden rounded-card border border-white/10 bg-[#111827]/70 p-7 backdrop-blur-xl transition-all duration-500 group-hover:-translate-y-2 group-hover:border-blue-400/40 group-hover:shadow-[0_25px_60px_rgba(37,99,235,.22)]">
+
+          <span class="absolute left-4 top-4 h-5 w-5 border-l border-t border-blue-400/0 transition-colors duration-500 group-hover:border-blue-400/70"></span>
+          <span class="absolute bottom-4 right-4 h-5 w-5 border-b border-r border-blue-400/0 transition-colors duration-500 group-hover:border-blue-400/70"></span>
+
+          <div class="relative mb-5 flex h-11 w-11 items-center justify-center">
+            <span class="absolute inset-0 rounded-full bg-blue-500/20 blur-lg motion-safe:animate-pulseGlow"></span>
+            <span class="relative flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-[#1E293B]/80 text-blue-300">
+
+              <!-- SVG SAME -->
+
+            </span>
+          </div>
+
+          <h3 class="font-body text-lg font-semibold text-white">
+            Unknown Primary
+          </h3>
+
+          <div class="mt-2 max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover:mt-3 group-hover:max-h-28 group-hover:opacity-100">
+            <p class="font-body text-sm leading-relaxed text-slate-300">
+              Comprehensive workup and empirical treatment for carcinoma of unknown primary site.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- =================== END TREATMENT AREAS =================== -->
+```
+<!-- ===================== FACILITY ===================== -->
+<section id="facility" class="relative w-full overflow-hidden bg-black py-24 lg:py-32" aria-label="Our Facility">
+
+  <!-- Ambient Blue Glow -->
+  <div class="pointer-events-none absolute inset-0 z-0" aria-hidden="true">
+    <div class="absolute -left-32 top-0 h-[30rem] w-[30rem] rounded-full bg-[radial-gradient(circle,rgba(37,99,235,.18)_0%,transparent_70%)] blur-3xl motion-safe:animate-driftSlow"></div>
+    <div class="absolute -right-32 bottom-0 h-[28rem] w-[28rem] rounded-full bg-[radial-gradient(circle,rgba(59,130,246,.15)_0%,transparent_70%)] blur-3xl motion-safe:animate-driftSlow [animation-delay:3s]"></div>
+  </div>
+
+  <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-10">
+
+    <!-- Section Tag -->
+    <p class="mb-14 inline-flex items-center gap-2 rounded-md border border-white/10 bg-[#111827]/70 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-blue-300 backdrop-blur-xl motion-safe:animate-fadeInUp">
+      <span class="h-1.5 w-1.5 rounded-full bg-blue-400 shadow-[0_0_12px_rgba(59,130,246,.8)]"></span>
+      Our Facility
+    </p>
+
+    <div class="grid grid-cols-1 items-start gap-y-10 lg:grid-cols-2 lg:gap-x-16">
+
+      <!-- ===== Left Image ===== -->
+      <div class="relative motion-safe:animate-fadeInUp lg:sticky lg:top-24">
+
+        <div class="relative aspect-[4/5] overflow-hidden rounded-3xl border border-white/10 shadow-[0_25px_70px_rgba(0,0,0,.45)] lg:aspect-[3/4]">
+
+          <img
+            src="https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?q=80&w=1600&auto=format&fit=crop"
+            alt="Modern oncology treatment suite"
+            class="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+          >
+
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-black/40"></div>
+
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(37,99,235,.25),transparent_60%)]"></div>
+
+          <span class="absolute left-6 top-6 h-6 w-6 border-l border-t border-blue-400/70"></span>
+          <span class="absolute bottom-6 right-6 h-6 w-6 border-r border-b border-blue-400/70"></span>
+
+          <div class="absolute left-7 top-7 rounded-xl border border-white/10 bg-[#111827]/70 px-5 py-3 backdrop-blur-xl">
+
+            <p class="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.16em] text-blue-300">
+              <span class="h-1.5 w-1.5 rounded-full bg-blue-400"></span>
+              Advanced Oncology Center
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ===== Right Content ===== -->
+      <div class="relative">
+
+        <div class="group relative z-20 rounded-3xl border border-white/10 bg-[#111827]/70 p-10 backdrop-blur-2xl transition-all duration-500 hover:-translate-y-2 hover:border-blue-400/40 hover:shadow-[0_25px_70px_rgba(37,99,235,.22)] motion-safe:animate-fadeInUp lg:-ml-20 lg:mt-16">
+
+          <span class="absolute left-5 top-5 h-5 w-5 border-l border-t border-blue-400/0 transition-all duration-500 group-hover:border-blue-400/70"></span>
+          <span class="absolute bottom-5 right-5 h-5 w-5 border-r border-b border-blue-400/0 transition-all duration-500 group-hover:border-blue-400/70"></span>
+
+          <h2 class="font-display text-3xl leading-tight text-white sm:text-4xl">
+            Designed for Healing,<br>Built for Precision
+          </h2>
+
+          <p class="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">
+            A premium oncology environment combining advanced technology,
+            patient comfort and compassionate care.
+          </p>
+
+        </div>
+
+        <!-- Timeline -->
+        <div class="relative mt-14 pl-2">
+
+          <div class="absolute left-[27px] top-2 bottom-2 w-px bg-gradient-to-b from-blue-500/60 via-white/10 to-blue-400/40"></div>
+
+          <ul class="flex flex-col gap-10">
+```
+
+            <!-- Advanced Infusion Center -->
+            <li class="group relative flex items-start gap-6 motion-safe:animate-fadeInUp" style="animation-delay:180ms">
+              <div class="relative flex h-14 w-14 shrink-0 items-center justify-center">
+                <span class="absolute inset-0 rounded-full bg-gold-500/25 blur-lg motion-safe:animate-pulseGlow" aria-hidden="true"></span>
+                <span class="relative flex h-14 w-14 items-center justify-center rounded-full border border-hairline bg-charcoal2/80 text-gold-300 backdrop-blur-md transition-all duration-300 ease-out group-hover:border-gold-500/60 group-hover:[transform:rotateY(-8deg)_scale(1.06)]">
+                  <svg viewBox="0 0 24 24" fill="none" class="h-6 w-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 3h6" /><path d="M10 3v5.2c0 .5-.16.98-.46 1.38L5.7 14.9C4.3 16.8 5.66 19.5 8 19.5h8c2.34 0 3.7-2.7 2.3-4.6l-3.84-5.32A2.4 2.4 0 0 1 14 8.2V3" />
+                    <path d="M7.5 15.5h9" /><circle cx="12" cy="12.5" r=".6" fill="currentColor" stroke="none" />
+                  </svg>
+                </span>
+              </div>
+              <div class="pt-3">
+                <h3 class="font-body text-lg font-semibold text-ivory">Advanced Infusion Center</h3>
+              </div>
+            </li>
+
+            <!-- Molecular Diagnostics Lab -->
+            <li class="group relative flex items-start gap-6 motion-safe:animate-fadeInUp" style="animation-delay:240ms">
+              <div class="relative flex h-14 w-14 shrink-0 items-center justify-center">
+                <span class="absolute inset-0 rounded-full bg-teal-500/25 blur-lg motion-safe:animate-pulseGlow" aria-hidden="true"></span>
+                <span class="relative flex h-14 w-14 items-center justify-center rounded-full border border-hairline bg-charcoal2/80 text-teal-300 backdrop-blur-md transition-all duration-300 ease-out group-hover:border-teal-500/60 group-hover:[transform:rotateY(-8deg)_scale(1.06)]">
+                  <svg viewBox="0 0 24 24" fill="none" class="h-6 w-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 3c0 4 10 4 10 8s-10 4-10 8" /><path d="M17 3c0 4-10 4-10 8s10 4 10 8" />
+                  </svg>
+                </span>
+              </div>
+              <div class="pt-3">
+                <h3 class="font-body text-lg font-semibold text-ivory">Molecular Diagnostics Lab</h3>
+              </div>
+            </li>
+
+            <!-- Consultation Suites -->
+            <li class="group relative flex items-start gap-6 motion-safe:animate-fadeInUp" style="animation-delay:300ms">
+              <div class="relative flex h-14 w-14 shrink-0 items-center justify-center">
+                <span class="absolute inset-0 rounded-full bg-gold-500/25 blur-lg motion-safe:animate-pulseGlow" aria-hidden="true"></span>
+                <span class="relative flex h-14 w-14 items-center justify-center rounded-full border border-hairline bg-charcoal2/80 text-gold-300 backdrop-blur-md transition-all duration-300 ease-out group-hover:border-gold-500/60 group-hover:[transform:rotateY(-8deg)_scale(1.06)]">
+                  <svg viewBox="0 0 24 24" fill="none" class="h-6 w-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 4h9l4 4v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z" /><path d="M15 4v4h4" /><path d="M8 12.5h8M8 15.5h5" />
+                  </svg>
+                </span>
+              </div>
+              <div class="pt-3">
+                <h3 class="font-body text-lg font-semibold text-ivory">Consultation Suites</h3>
+              </div>
+            </li>
+
+            <!-- Multidisciplinary Team -->
+            <li class="group relative flex items-start gap-6 motion-safe:animate-fadeInUp" style="animation-delay:360ms">
+              <div class="relative flex h-14 w-14 shrink-0 items-center justify-center">
+                <span class="absolute inset-0 rounded-full bg-teal-500/25 blur-lg motion-safe:animate-pulseGlow" aria-hidden="true"></span>
+                <span class="relative flex h-14 w-14 items-center justify-center rounded-full border border-hairline bg-charcoal2/80 text-teal-300 backdrop-blur-md transition-all duration-300 ease-out group-hover:border-teal-500/60 group-hover:[transform:rotateY(-8deg)_scale(1.06)]">
+                  <svg viewBox="0 0 24 24" fill="none" class="h-6 w-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="8" cy="9" r="2.6" /><circle cx="16" cy="9" r="2.6" /><path d="M3.5 18c.4-2.6 2.3-4.3 4.5-4.3s4.1 1.7 4.5 4.3" /><path d="M11.5 18c.4-2.6 2.3-4.3 4.5-4.3s4.1 1.7 4.5 4.3" />
+                  </svg>
+                </span>
+              </div>
+              <div class="pt-3">
+                <h3 class="font-body text-lg font-semibold text-ivory">Multidisciplinary Team</h3>
+              </div>
+            </li>
+
+            <!-- Imaging & Radiology -->
+            <li class="group relative flex items-start gap-6 motion-safe:animate-fadeInUp" style="animation-delay:420ms">
+              <div class="relative flex h-14 w-14 shrink-0 items-center justify-center">
+                <span class="absolute inset-0 rounded-full bg-gold-500/25 blur-lg motion-safe:animate-pulseGlow" aria-hidden="true"></span>
+                <span class="relative flex h-14 w-14 items-center justify-center rounded-full border border-hairline bg-charcoal2/80 text-gold-300 backdrop-blur-md transition-all duration-300 ease-out group-hover:border-gold-500/60 group-hover:[transform:rotateY(-8deg)_scale(1.06)]">
+                  <svg viewBox="0 0 24 24" fill="none" class="h-6 w-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="8" /><circle cx="12" cy="12" r="3.5" /><path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
+                  </svg>
+                </span>
+              </div>
+              <div class="pt-3">
+                <h3 class="font-body text-lg font-semibold text-ivory">Imaging &amp; Radiology</h3>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- =================== END FACILITY =================== -->
+
+<<!-- ===================== PATIENT REVIEWS ===================== -->
+
+<section id="reviews" class="relative w-full overflow-hidden bg-[#030712] py-24 lg:py-32" aria-label="Patient Reviews">
+
+  <!-- Ambient Blue Lighting -->
+  <div class="pointer-events-none absolute inset-0 z-0" aria-hidden="true">
+
+    <div class="absolute -left-24 top-20 h-[26rem] w-[26rem] rounded-full 
+    bg-[radial-gradient(circle,rgba(37,99,235,0.25)_0%,transparent_70%)] 
+    blur-3xl motion-safe:animate-driftSlow">
+    </div>
+
+    <div class="absolute -right-28 bottom-10 h-[26rem] w-[26rem] rounded-full 
+    bg-[radial-gradient(circle,rgba(96,165,250,0.20)_0%,transparent_70%)] 
+    blur-3xl motion-safe:animate-driftSlow [animation-delay:3.5s]">
+    </div>
+
+
+    <!-- Floating Particles -->
+
+    <span class="absolute left-[10%] top-[22%] h-1.5 w-1.5 rounded-full 
+    bg-[#2563EB]/50 blur-[1px] motion-safe:animate-driftSlow [animation-duration:9s]">
+    </span>
+
+    <span class="absolute left-[35%] top-[8%] h-1 w-1 rounded-full 
+    bg-[#60A5FA]/50 blur-[1px] motion-safe:animate-driftSlow [animation-duration:12s] [animation-delay:1.2s]">
+    </span>
+
+    <span class="absolute left-[62%] top-[65%] h-1 w-1 rounded-full 
+    bg-[#2563EB]/40 blur-[1px] motion-safe:animate-driftSlow [animation-duration:10s] [animation-delay:2.2s]">
+    </span>
+
+    <span class="absolute left-[80%] top-[18%] h-1.5 w-1.5 rounded-full 
+    bg-[#60A5FA]/40 blur-[1px] motion-safe:animate-driftSlow [animation-duration:11s] [animation-delay:.6s]">
+    </span>
+
+    <span class="absolute left-[46%] top-[85%] h-1 w-1 rounded-full 
+    bg-[#2563EB]/40 blur-[1px] motion-safe:animate-driftSlow [animation-duration:13s] [animation-delay:2.8s]">
+    </span>
+
+  </div>
+
+
+  <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-10">
+
+
+    <!-- Section Header -->
+
+    <div class="relative mb-16 max-w-2xl motion-safe:animate-fadeInUp">
+
+      <p class="mb-6 inline-flex items-center gap-2 rounded-[4px] 
+      border border-white/10 bg-[#111827]/60 px-4 py-2 
+      font-mono text-[11px] uppercase tracking-[0.18em] 
+      text-[#60A5FA] backdrop-blur-md">
+
+        <span class="h-1.5 w-1.5 rounded-full 
+        bg-[#2563EB] shadow-[0_0_20px_rgba(37,99,235,0.25)]">
+        </span>
+
+        Patient Reviews
+
+      </p>
+
+
+      <h2 class="font-display text-4xl leading-[1.1] text-[#F8FAFC] sm:text-5xl">
+        Voices of Hope &amp; Healing
+      </h2>
+
+
+
+      <!-- Trust Badge -->
+
+      <div class="mt-6 inline-flex items-center gap-2 rounded-[4px] 
+      border border-white/10 bg-[#0F172A]/60 px-4 py-2 
+      font-mono text-[11px] uppercase tracking-[0.14em] 
+      text-[#CBD5E1] backdrop-blur-md">
+
+        <span class="h-1.5 w-1.5 rounded-full 
+        bg-[#60A5FA] shadow-[0_0_20px_rgba(96,165,250,0.20)] 
+        motion-safe:animate-pulseGlow">
+        </span>
+
+        5,000+ Happy Patients
+
+      </div>
+
+    </div>
+
+    <!-- floating Google-style score badge -->
+<div class="absolute right-6 top-0 z-20 hidden -rotate-2 items-center gap-3 rounded-card 
+border border-white/10 bg-[#111827]/70 px-5 py-3 shadow-lift backdrop-blur-xl 
+transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] 
+hover:rotate-0 hover:-translate-y-1 motion-safe:animate-fadeInUp sm:flex lg:right-10" 
+style="animation-delay:150ms">
+
+  <div class="flex flex-col items-center leading-none">
+    <span class="font-display text-xl text-[#60A5FA]">4.9</span>
+
+    <span class="mt-1 font-mono text-[9px] uppercase tracking-[0.12em] text-[#94A3B8]">
+      / 5
+    </span>
+  </div>
+
+
+  <div class="h-8 w-px bg-white/10"></div>
+
+
+  <div>
+
+    <div class="flex gap-0.5 text-[#2563EB]">
+
+      <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5">
+        <path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/>
+      </svg>
+
+      <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5">
+        <path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/>
+      </svg>
+
+      <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5">
+        <path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/>
+      </svg>
+
+      <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5">
+        <path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/>
+      </svg>
+
+      <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5">
+        <path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/>
+      </svg>
+
+    </div>
+
+
+    <p class="mt-1 font-mono text-[9px] uppercase tracking-[0.12em] text-[#94A3B8]">
+      Verified Reviews
+    </p>
+
+  </div>
+
+</div>
+
+
+
+<!-- Review wall -->
+<div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
+
+
+<!-- ===== Featured review ===== -->
+
+<div class="group relative lg:col-span-6 [perspective:1200px] motion-safe:animate-fadeInUp" 
+style="animation-delay:0ms">
+
+
+
+<!-- Main Card -->
+
+<div class="relative flex h-full min-h-[26rem] flex-col justify-between 
+overflow-hidden rounded-hero 
+border border-white/10 
+bg-[#111827]/70 
+p-9 
+backdrop-blur-xl 
+transition-transform duration-500 
+ease-[cubic-bezier(0.22,1,0.36,1)] 
+group-hover:[transform:rotateY(-3deg)_rotateX(2deg)_translateY(-4px)] 
+group-hover:shadow-[0_0_40px_rgba(37,99,235,0.25)] 
+sm:p-11">
+
+
+
+<!-- quotation -->
+
+<span class="pointer-events-none absolute -top-6 right-6 select-none 
+font-display text-[10rem] leading-none text-[#2563EB]/[0.08] 
+sm:text-[13rem]" 
+aria-hidden="true">
+
+&rdquo;
+
+</span>
+
+
+
+<span class="pointer-events-none absolute left-6 top-6 h-6 w-6 
+rounded-tl-[4px] 
+border-l border-t border-[#2563EB]/0 
+transition-colors duration-500 
+group-hover:border-[#60A5FA]/70" 
+aria-hidden="true">
+</span>
+
+
+
+<span class="pointer-events-none absolute bottom-6 right-6 h-6 w-6 
+rounded-br-[4px] 
+border-b border-r border-[#2563EB]/0 
+transition-colors duration-500 
+group-hover:border-[#60A5FA]/70" 
+aria-hidden="true">
+</span>
+
+
+
+
+<div class="relative">
+
+
+<div class="mb-6 flex gap-1 text-[#2563EB]">
+
+<!-- stars -->
+
+</div>
+
+
+
+<p class="font-display text-2xl italic leading-snug text-[#F8FAFC] sm:text-3xl">
+
+"Dr. Khalid didn't just treat my cancer — he treated me like family. Every question was answered, every fear addressed."
+
+</p>
+
+
+
+</div>
+
+
+
+
+<div class="relative mt-8 flex items-center gap-4 
+border-t border-white/10 pt-6">
+
+
+<div class="relative h-14 w-14 shrink-0">
+
+
+<span class="absolute inset-0 rounded-full 
+bg-[#2563EB]/30 
+blur-md 
+motion-safe:animate-pulseGlow" 
+aria-hidden="true">
+</span>
+
+
+
+<img
+src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&amp;w=200&amp;auto=format&amp;fit=crop&amp;crop=faces"
+alt="Ayesha M., breast cancer survivor and OncoVita patient"
+class="relative h-14 w-14 rounded-full 
+border-2 border-[#60A5FA]/50 
+object-cover"
+/>
+
+
+</div>
+
+
+
+<div>
+
+<p class="font-body text-sm font-semibold text-[#F8FAFC]">
+Ayesha M.
+</p>
+
+
+<p class="font-mono text-[10px] uppercase tracking-[0.14em] text-[#94A3B8]">
+Breast Cancer Survivor
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<!-- ===== Staggered reviews ===== -->
+
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-6">
+
+  <!-- Bilal -->
+<div class="group relative motion-safe:animate-fadeInUp" style="animation-delay:120ms">
+  <div class="relative flex h-full flex-col justify-between overflow-hidden rounded-card border border-white/10 bg-[#111827]/80 p-6 backdrop-blur-xl transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-2 group-hover:border-blue-400/30 group-hover:shadow-[0_20px_50px_rgba(37,99,235,0.18)]">
+
+    <span class="pointer-events-none absolute right-4 top-3 select-none font-display text-6xl leading-none text-blue-400/10" aria-hidden="true">&rdquo;</span>
+
+    <div>
+      <div class="mb-3 flex gap-0.5 text-blue-400">
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+      </div>
+
+      <p class="font-body text-sm leading-relaxed text-[#CBD5E1]">
+        "The diagnostic process was fast and thorough. I had my full staging done within a week."
+      </p>
+    </div>
+
+    <div class="mt-5 flex items-center gap-3 border-t border-white/10 pt-4">
+      <img
+        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=160&auto=format&fit=crop&crop=faces"
+        alt="Bilal S., lung cancer patient"
+        class="h-10 w-10 rounded-full border border-white/10 object-cover"
+      />
+
+      <div>
+        <p class="font-body text-sm font-semibold text-white">Bilal S.</p>
+        <p class="font-mono text-[9px] uppercase tracking-[0.12em] text-[#94A3B8]">
+          Lung Cancer Patient
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Sana -->
+<div class="group relative motion-safe:animate-fadeInUp sm:mt-10" style="animation-delay:200ms">
+
+  <div class="relative flex h-full flex-col justify-between overflow-hidden rounded-card border border-white/10 bg-[#111827]/80 p-6 backdrop-blur-xl transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-2 group-hover:border-blue-400/30 group-hover:shadow-[0_20px_50px_rgba(37,99,235,0.18)]">
+
+    <span class="pointer-events-none absolute right-4 top-3 select-none font-display text-6xl leading-none text-blue-400/10" aria-hidden="true">&rdquo;</span>
+
+    <div>
+      <div class="mb-3 flex gap-0.5 text-blue-400">
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+      </div>
+
+      <p class="font-body text-sm leading-relaxed text-[#CBD5E1]">
+        "Compassionate, honest, and always available. The whole team made a terrifying time feel manageable."
+      </p>
+    </div>
+
+    <div class="mt-5 flex items-center gap-3 border-t border-white/10 pt-4">
+      <img
+        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=160&auto=format&fit=crop&crop=faces"
+        alt="Sana T., caregiver"
+        class="h-10 w-10 rounded-full border border-white/10 object-cover"
+      />
+
+      <div>
+        <p class="font-body text-sm font-semibold text-white">Sana T.</p>
+        <p class="font-mono text-[9px] uppercase tracking-[0.12em] text-[#94A3B8]">
+          Caregiver
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</div><!-- Imran -->
+<div class="group relative motion-safe:animate-fadeInUp" style="animation-delay:280ms">
+
+  <div class="relative flex h-full flex-col justify-between overflow-hidden rounded-card border border-white/10 bg-[#111827]/80 p-6 backdrop-blur-xl transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-2 group-hover:border-blue-400/30 group-hover:shadow-[0_20px_50px_rgba(37,99,235,0.18)]">
+
+    <span class="pointer-events-none absolute right-4 top-3 select-none font-display text-6xl leading-none text-blue-400/10" aria-hidden="true">&rdquo;</span>
+
+    <div>
+
+      <div class="mb-3 flex gap-0.5 text-blue-400">
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+      </div>
+
+      <p class="font-body text-sm leading-relaxed text-[#CBD5E1]">
+        "The second opinion clinic gave us clarity when we needed it most. Forever grateful."
+      </p>
+
+    </div>
+
+    <div class="mt-5 flex items-center gap-3 border-t border-white/10 pt-4">
+
+      <img
+        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=160&auto=format&fit=crop&crop=faces"
+        alt="Imran K., patient family member"
+        class="h-10 w-10 rounded-full border border-white/10 object-cover"
+      />
+
+      <div>
+        <p class="font-body text-sm font-semibold text-white">Imran K.</p>
+        <p class="font-mono text-[9px] uppercase tracking-[0.12em] text-[#94A3B8]">
+          Patient Family
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Farah -->
+<div class="group relative motion-safe:animate-fadeInUp sm:mt-10" style="animation-delay:360ms">
+
+  <div class="relative flex h-full flex-col justify-between overflow-hidden rounded-card border border-white/10 bg-[#111827]/80 p-6 backdrop-blur-xl transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-2 group-hover:border-blue-400/30 group-hover:shadow-[0_20px_50px_rgba(37,99,235,0.18)]">
+
+    <span class="pointer-events-none absolute right-4 top-3 select-none font-display text-6xl leading-none text-blue-400/10" aria-hidden="true">&rdquo;</span>
+
+    <div>
+
+      <div class="mb-3 flex gap-0.5 text-blue-400">
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor" class="h-3.5 w-3.5"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7L10 1.5Z"/></svg>
+      </div>
+
+      <p class="font-body text-sm leading-relaxed text-[#CBD5E1]">
+        "From diagnosis to remission, every step felt guided by real expertise and real care."
+      </p>
+
+    </div>
+
+    <div class="mt-5 flex items-center gap-3 border-t border-white/10 pt-4">
+
+      <img
+        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=160&auto=format&fit=crop&crop=faces"
+        alt="Farah N., lymphoma survivor"
+        class="h-10 w-10 rounded-full border border-white/10 object-cover"
+      />
+
+      <div>
+        <p class="font-body text-sm font-semibold text-white">Farah N.</p>
+        <p class="font-mono text-[9px] uppercase tracking-[0.12em] text-[#94A3B8]">
+          Lymphoma Survivor
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- =================== END PATIENT REVIEWS =================== -->
+
+<!-- ===================== FAQ / HELP CENTER ===================== -->
+<section id="faq" class="relative w-full overflow-hidden bg-[#020617] py-24 lg:py-32" aria-label="Help Center">
+
+  <!-- Premium Navy Ambient -->
+  <div class="pointer-events-none absolute inset-0" aria-hidden="true">
+    <div class="absolute inset-x-0 top-0 h-[42rem] bg-[radial-gradient(ellipse_70%_60%_at_50%_0%,rgba(37,99,235,0.14),transparent_72%)]"></div>
+    <div class="absolute -left-32 bottom-0 h-[24rem] w-[24rem] rounded-full bg-blue-500/8 blur-[120px]"></div>
+    <div class="absolute -right-32 top-20 h-[24rem] w-[24rem] rounded-full bg-cyan-400/5 blur-[120px]"></div>
+  </div>
+
+  <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-10">
+
+    <!-- Section header -->
+    <div class="mb-16 flex flex-col items-start justify-between gap-8 motion-safe:animate-fadeInUp sm:flex-row sm:items-end">
+
+      <div>
+        <p class="mb-6 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-blue-400">
+          <span class="h-1.5 w-1.5 rounded-full bg-blue-500"></span>
+          Help Center
+        </p>
+
+        <h2 class="font-display text-4xl leading-[1.1] text-white sm:text-5xl">
+          Frequently Asked Questions
+        </h2>
+      </div>
+
+      <a
+        href="faq.html"
+        class="inline-flex shrink-0 items-center rounded-full border border-blue-500/30 bg-white/[0.03] px-6 py-2.5 font-body text-sm font-semibold text-blue-300 transition-all duration-300 hover:border-blue-400 hover:bg-blue-500/10 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
+      >
+        Ask a Question
+      </a>
+
+    </div>
+
+    <!-- Two-column editorial layout -->
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-stretch">
+
+      <!-- ===== Left: Assistant Panel ===== -->
+      <div
+        class="relative overflow-hidden rounded-[2.5rem_2.5rem_2.5rem_0rem] border border-white/10 bg-[#111827]/80 p-10 sm:p-12 lg:col-span-5 lg:rounded-[4rem_4rem_4rem_0rem] motion-safe:animate-fadeInUp"
+        style="animation-delay:0ms"
+      >
+
+        <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(37,99,235,.08),transparent)]"></div>
+
+        <div class="relative">
+
+          <p class="font-mono text-[11px] uppercase tracking-[0.18em] text-slate-400">
+            AI Assistant
+          </p>
+
+          <h3 class="mt-4 font-display text-3xl leading-tight text-white">
+            Ask the Assistant
+          </h3>
+
+          <p class="mt-5 max-w-sm font-body text-base leading-relaxed text-slate-300">
+            Use the chat button in the bottom-right to ask about services, treatments, location, hours, or second opinions.
+          </p>
+
+          <!-- illustration -->
+          <div class="relative my-14 flex h-56 items-center justify-center">
+
+            <span class="absolute h-44 w-44 rounded-full bg-blue-500/20 blur-[90px] motion-safe:animate-pulseGlow"></span>
+
+            <svg viewBox="0 0 200 200" class="relative h-44 w-44 text-blue-400" aria-hidden="true">
+              <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="1" opacity="0.25"/>
+              <circle cx="100" cy="100" r="52" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+              <circle cx="100" cy="100" r="34" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.7"/>
+              <circle cx="100" cy="100" r="10" fill="currentColor"/>
+              <circle cx="100" cy="30" r="3" fill="currentColor"/>
+              <circle cx="170" cy="100" r="3" fill="currentColor"/>
+              <circle cx="100" cy="170" r="3" fill="currentColor"/>
+              <circle cx="30" cy="100" r="3" fill="currentColor"/>
+            </svg>
+
+          </div>
+
+          <!-- Quick Links -->
+          <div class="flex flex-wrap gap-3">
+
+            <a href="#"
+              class="rounded-full border border-white/10 bg-[#1E293B] px-5 py-2 font-body text-sm text-slate-300 transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-400 hover:bg-blue-500/10 hover:text-white">
+              Appointments
+            </a>
+
+            <a href="#"
+              class="rounded-full border border-white/10 bg-[#1E293B] px-5 py-2 font-body text-sm text-slate-300 transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-400 hover:bg-blue-500/10 hover:text-white">
+              Treatments
+            </a>
+
+            <a href="#"
+              class="rounded-full border border-white/10 bg-[#1E293B] px-5 py-2 font-body text-sm text-slate-300 transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-400 hover:bg-blue-500/10 hover:text-white">
+              Reports
+            </a>
+
+            <a href="#"
+              class="rounded-full border border-white/10 bg-[#1E293B] px-5 py-2 font-body text-sm text-slate-300 transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-400 hover:bg-blue-500/10 hover:text-white">
+              Directions
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ===== Right: FAQ Panel ===== -->
+<div
+  class="relative rounded-[0rem_2.5rem_2.5rem_2.5rem] border border-white/10 bg-[#111827]/80 p-8 motion-safe:animate-fadeInUp sm:p-10 lg:col-span-7 lg:rounded-[0rem_4rem_4rem_4rem]"
+  style="animation-delay:120ms"
+>
+
+  <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(37,99,235,.05),transparent)]"></div>
+
+  <div class="relative pl-8">
+
+    <!-- animated vertical progress line -->
+    <div class="absolute left-0 top-2 bottom-2 w-px bg-white/10" aria-hidden="true"></div>
+
+    <!-- ===== FAQ 1 ===== -->
+    <div class="group relative">
+
+      <span class="absolute -left-8 top-8 h-2 w-2 -translate-x-1/2 rounded-full bg-white/20 transition-all duration-300 group-has-[:checked]:scale-125 group-has-[:checked]:bg-blue-500 group-has-[:checked]:shadow-[0_0_20px_rgba(59,130,246,.6)]" aria-hidden="true"></span>
+
+      <input type="checkbox" id="faq-1" class="peer absolute h-0 w-0 opacity-0" />
+
+      <label
+        for="faq-1"
+        class="flex cursor-pointer items-center justify-between gap-6 border-b border-white/10 py-6 transition-colors duration-300"
+      >
+
+        <span class="font-body text-base font-medium text-white transition-colors duration-300 group-hover:text-blue-300 sm:text-lg">
+          How do I book an appointment?
+        </span>
+
+        <span class="relative h-5 w-5 shrink-0">
+
+          <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-slate-300 transition-colors duration-300 group-hover:bg-blue-300"></span>
+
+          <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-slate-300 transition-all duration-300 ease-out group-hover:bg-blue-300 group-has-[:checked]:scale-y-0"></span>
+
+        </span>
+
+      </label>
+
+      <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+
+        <div class="overflow-hidden">
+
+          <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-slate-300">
+            Book directly through our online consultation form, or call the front desk — our care coordinators will confirm the earliest available slot with Dr. Khalid.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+                <!-- ===== FAQ 2 ===== -->
+          <div class="group relative">
+            <span class="absolute -left-8 top-8 h-2 w-2 -translate-x-1/2 rounded-full bg-white/10 transition-all duration-300 group-has-[:checked]:scale-125 group-has-[:checked]:bg-red-500 group-has-[:checked]:shadow-[0_0_15px_rgba(239,68,68,.5)]" aria-hidden="true"></span>
+
+            <input type="checkbox" id="faq-2" class="peer absolute h-0 w-0 opacity-0" />
+
+            <label for="faq-2" class="flex cursor-pointer items-center justify-between gap-6 border-b border-white/10 py-6 transition-colors duration-300">
+              <span class="font-body text-base font-medium text-white transition-colors duration-300 group-hover:text-red-400 sm:text-lg">
+                What are the clinic hours?
+              </span>
+
+              <span class="relative h-5 w-5 shrink-0">
+                <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-slate-300 transition-colors duration-300 group-hover:bg-red-400"></span>
+                <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-slate-300 transition-all duration-300 ease-out group-hover:bg-red-400 group-has-[:checked]:scale-y-0"></span>
+              </span>
+            </label>
+
+            <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+              <div class="overflow-hidden">
+                <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-slate-300">
+                  The clinic operates six days a week. Exact hours and same-week availability are confirmed when you book, or you can ask the assistant below.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== FAQ 3 ===== -->
+          <div class="group relative">
+            <span class="absolute -left-8 top-8 h-2 w-2 -translate-x-1/2 rounded-full bg-white/10 transition-all duration-300 group-has-[:checked]:scale-125 group-has-[:checked]:bg-red-500 group-has-[:checked]:shadow-[0_0_15px_rgba(239,68,68,.5)]" aria-hidden="true"></span>
+
+            <input type="checkbox" id="faq-3" class="peer absolute h-0 w-0 opacity-0" />
+
+            <label for="faq-3" class="flex cursor-pointer items-center justify-between gap-6 border-b border-white/10 py-6 transition-colors duration-300">
+              <span class="font-body text-base font-medium text-white transition-colors duration-300 group-hover:text-red-400 sm:text-lg">
+                Where is the clinic located?
+              </span>
+
+              <span class="relative h-5 w-5 shrink-0">
+                <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-slate-300 transition-colors duration-300 group-hover:bg-red-400"></span>
+                <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-slate-300 transition-all duration-300 ease-out group-hover:bg-red-400 group-has-[:checked]:scale-y-0"></span>
+              </span>
+            </label>
+
+            <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+              <div class="overflow-hidden">
+                <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-slate-300">
+                  OncoVita is based in Islamabad, Pakistan. Full directions and a map link are available on our Contact page and via the Directions link.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== FAQ 4 ===== -->
+          <div class="group relative">
+            <span class="absolute -left-8 top-8 h-2 w-2 -translate-x-1/2 rounded-full bg-white/10 transition-all duration-300 group-has-[:checked]:scale-125 group-has-[:checked]:bg-red-500 group-has-[:checked]:shadow-[0_0_15px_rgba(239,68,68,.5)]" aria-hidden="true"></span>
+
+            <input type="checkbox" id="faq-4" class="peer absolute h-0 w-0 opacity-0" />
+
+            <label for="faq-4" class="flex cursor-pointer items-center justify-between gap-6 border-b border-white/10 py-6 transition-colors duration-300">
+              <span class="font-body text-base font-medium text-white transition-colors duration-300 group-hover:text-red-400 sm:text-lg">
+                Do you offer second opinions?
+              </span>
+
+              <span class="relative h-5 w-5 shrink-0">
+                <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-slate-300 transition-colors duration-300 group-hover:bg-red-400"></span>
+                <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-slate-300 transition-all duration-300 ease-out group-hover:bg-red-400 group-has-[:checked]:scale-y-0"></span>
+              </span>
+            </label>
+
+            <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+              <div class="overflow-hidden">
+                <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-slate-300">
+                  Yes. Our Second Opinion Clinic offers an independent review of your diagnosis, pathology, and current treatment plan.
+                </p>
+              </div>
+            </div>
+          </div>
+
+                    <!-- ===== FAQ 5 ===== -->
+          <div class="group relative">
+            <span class="absolute -left-8 top-8 h-2 w-2 -translate-x-1/2 rounded-full bg-white/10 transition-all duration-300 group-has-[:checked]:scale-125 group-has-[:checked]:bg-red-500 group-has-[:checked]:shadow-[0_0_15px_rgba(239,68,68,.5)]" aria-hidden="true"></span>
+
+            <input type="checkbox" id="faq-5" class="peer absolute h-0 w-0 opacity-0" />
+
+            <label for="faq-5" class="flex cursor-pointer items-center justify-between gap-6 py-6 transition-colors duration-300">
+              <span class="font-body text-base font-medium text-white transition-colors duration-300 group-hover:text-red-400 sm:text-lg">
+                What should I bring to the first visit?
+              </span>
+
+              <span class="relative h-5 w-5 shrink-0">
+                <span class="absolute left-0 top-1/2 h-px w-5 -translate-y-1/2 bg-slate-300 transition-colors duration-300 group-hover:bg-red-400"></span>
+                <span class="absolute left-1/2 top-0 h-5 w-px -translate-x-1/2 bg-slate-300 transition-all duration-300 ease-out group-hover:bg-red-400 group-has-[:checked]:scale-y-0"></span>
+              </span>
+            </label>
+
+            <div class="grid grid-rows-[0fr] transition-all duration-500 ease-out group-has-[:checked]:grid-rows-[1fr]">
+              <div class="overflow-hidden">
+                <p class="max-w-xl pb-6 font-body text-sm leading-relaxed text-slate-300">
+                  Bring any prior scans, pathology reports, a list of current medications, and your referral letter if you have one — our team can also help retrieve records in advance.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- =================== END FAQ / HELP CENTER =================== -->
+
+<!-- ===================== CONTACT INFORMATION ===================== -->
+<section id="contact" class="relative w-full overflow-hidden bg-[#020617] py-24 lg:py-32" aria-label="Contact Information">
+
+  <!-- Background -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(30,41,59,.65),transparent_70%)]"></div>
+    <div class="absolute top-0 left-0 w-full h-full bg-[linear-gradient(180deg,rgba(255,255,255,.015),transparent)]"></div>
+  </div>
+
+  <div class="relative z-10 mx-auto max-w-6xl px-6 lg:px-10">
+
+    <!-- Header -->
+    <div class="relative mb-16 motion-safe:animate-fadeInUp lg:mb-24">
+      <p class="mb-6 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-blue-400">
+        <span class="h-1.5 w-1.5 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,.8)]"></span>
+        Contact Information
+      </p>
+
+      <div class="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
+        <h2 class="max-w-xl font-display text-4xl leading-[1.1] text-white sm:text-5xl">
+          Reach Our Care Team
+        </h2>
+
+        <p class="font-mono text-xs uppercase tracking-[0.14em] text-slate-500">
+          33.6844° N · 73.0479° E — Islamabad
+        </p>
+      </div>
+    </div>
+
+    <!-- Directory -->
+    <dl class="border-t border-white/10">
+
+      <!-- 01 Address -->
+      <div class="group relative grid grid-cols-1 gap-3 border-b border-white/10 py-10 transition-all duration-500 sm:grid-cols-12 sm:items-start sm:gap-6 motion-safe:animate-fadeInUp" style="animation-delay:0ms">
+
+        <span class="pointer-events-none absolute inset-y-0 left-0 w-0 bg-blue-500/5 transition-all duration-500 group-hover:w-full"></span>
+
+        <div class="relative flex items-center gap-4 sm:col-span-4">
+          <span class="font-mono text-xs text-slate-500">01</span>
+
+          <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-blue-500/20 bg-slate-900 text-blue-400 transition-all duration-300 group-hover:border-blue-500 group-hover:shadow-[0_0_20px_rgba(59,130,246,.35)]">
+            <svg viewBox="0 0 24 24" fill="none" class="h-5 w-5" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+          </span>
+
+          <dt class="font-mono text-xs uppercase tracking-[0.16em] text-slate-500">
+            Address
+          </dt>
+        </div>
+
+        <dd class="relative pl-16 transition-all duration-500 group-hover:translate-x-2 sm:col-span-8 sm:pl-0">
+          <p class="font-body text-xl text-white sm:text-2xl">
+            Plot 4, Street 45, Sector G-9/1
+          </p>
+          <p class="mt-1 font-body text-xl text-slate-300 sm:text-2xl">
+            Islamabad, Pakistan
+          </p>
+        </dd>
+
+      </div>
+
+      <!-- 02 Phone -->
+      <div class="group relative grid grid-cols-1 gap-3 border-b border-white/10 py-10 transition-all duration-500 sm:grid-cols-12 sm:items-start sm:gap-6 motion-safe:animate-fadeInUp" style="animation-delay:80ms">
+
+        <span class="pointer-events-none absolute inset-y-0 left-0 w-0 bg-slate-700/40 transition-all duration-500 group-hover:w-full"></span>
+
+        <div class="relative flex items-center gap-4 sm:col-span-4">
+          <span class="font-mono text-xs text-slate-500">02</span>
+
+          <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-700 bg-slate-900 text-blue-400 transition-all duration-300 group-hover:border-blue-500 group-hover:shadow-[0_0_20px_rgba(59,130,246,.35)]">
+            <svg viewBox="0 0 24 24" fill="none" class="h-5 w-5" stroke="currentColor" stroke-width="1.5">
+              <path d="M6.5 3.5c.6 0 1.2.4 1.4 1l1 2.4c.2.5.1 1.1-.2 1.5L7.4 10c1 2.4 2.9 4.3 5.3 5.3l1.6-1.3c.4-.3 1-.4 1.5-.2l2.4 1c.6.2 1 .8 1 1.4v2c0 1-.8 1.8-1.8 1.8C10.6 20 4 13.4 4 5.8c0-1 .8-1.8 1.8-1.8h.7Z"/>
+            </svg>
+          </span>
+
+          <dt class="font-mono text-xs uppercase tracking-[0.16em] text-slate-500">
+            Phone
+          </dt>
+        </div>
+
+        <dd class="relative pl-16 transition-all duration-500 group-hover:translate-x-2 sm:col-span-8 sm:pl-0">
+          <p class="font-body text-xl text-white sm:text-2xl">
+            +92 51 1234 5678
+          </p>
+          <p class="mt-1 font-body text-xl text-slate-300 sm:text-2xl">
+            +92 300 111 0000
+          </p>
+        </dd>
+
+      </div>
+
+           <!-- 03 — Email -->
+      <div class="group relative grid grid-cols-1 gap-3 border-b border-white/10 py-10 transition-all duration-500 sm:grid-cols-12 sm:items-start sm:gap-6 motion-safe:animate-fadeInUp" style="animation-delay:160ms">
+
+        <span class="pointer-events-none absolute inset-y-0 left-0 w-0 bg-blue-500/5 transition-all duration-500 group-hover:w-full"></span>
+
+        <div class="relative flex items-center gap-4 sm:col-span-4">
+          <span class="font-mono text-xs text-slate-500">03</span>
+
+          <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-blue-500/20 bg-slate-900 text-blue-400 transition-all duration-300 group-hover:border-blue-500 group-hover:shadow-[0_0_20px_rgba(59,130,246,.35)]">
+            <svg viewBox="0 0 24 24" fill="none" class="h-5 w-5" stroke="currentColor" stroke-width="1.5">
+              <rect x="3.5" y="5.5" width="17" height="13" rx="1.5"/>
+              <path d="M4.5 6.5l7.5 6 7.5-6"/>
+            </svg>
+          </span>
+
+          <dt class="font-mono text-xs uppercase tracking-[0.16em] text-slate-500">
+            Email
+          </dt>
+        </div>
+
+        <dd class="relative pl-16 transition-all duration-500 group-hover:translate-x-2 sm:col-span-8 sm:pl-0">
+          <a href="mailto:info@oncovita.pk" class="inline-block font-body text-xl text-white underline decoration-white/20 underline-offset-4 transition-all duration-300 hover:text-blue-400 hover:decoration-blue-500 sm:text-2xl">
+            info@oncovita.pk
+          </a>
+        </dd>
+      </div>
+
+      <!-- 04 — Clinic Hours -->
+      <div class="group relative grid grid-cols-1 gap-3 border-b border-white/10 py-10 transition-all duration-500 sm:grid-cols-12 sm:items-start sm:gap-6 motion-safe:animate-fadeInUp" style="animation-delay:240ms">
+
+        <span class="pointer-events-none absolute inset-y-0 left-0 w-0 bg-slate-700/40 transition-all duration-500 group-hover:w-full"></span>
+
+        <div class="relative flex items-center gap-4 sm:col-span-4">
+          <span class="font-mono text-xs text-slate-500">04</span>
+
+          <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-700 bg-slate-900 text-blue-400 transition-all duration-300 group-hover:border-blue-500 group-hover:shadow-[0_0_20px_rgba(59,130,246,.35)]">
+            <svg viewBox="0 0 24 24" fill="none" class="h-5 w-5" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="8.5"/>
+              <path d="M12 7.5V12l3 2"/>
+            </svg>
+          </span>
+
+          <dt class="font-mono text-xs uppercase tracking-[0.16em] text-slate-500">
+            Clinic Hours
+          </dt>
+        </div>
+
+        <dd class="relative flex flex-wrap items-center gap-x-4 gap-y-2 pl-16 transition-all duration-500 group-hover:translate-x-2 sm:col-span-8 sm:pl-0">
+          <p class="font-body text-xl text-white sm:text-2xl">
+            Mon–Sat: 9:00 AM – 6:00 PM
+          </p>
+
+          <span class="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.14em] text-blue-400">
+            <span class="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse"></span>
+            Emergency: 24/7 On-call
+          </span>
+        </dd>
+      </div>
+
+    </dl>
+
+  </div>
+</section>
+<!-- =================== END CONTACT INFORMATION =================== -->
+
+<!-- ===================== FIND US ===================== -->
+<section id="find-us" class="relative w-full overflow-hidden bg-[#030712] py-24 lg:py-32" aria-label="Find Us">
+
+  <!-- Cinematic Background -->
+  <div class="pointer-events-none absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
+
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(15,23,42,0.9),transparent_65%)]"></div>
+
+    <div class="absolute left-1/2 top-1/3 h-[40rem] w-[40rem] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(212,175,55,0.10)_0%,rgba(15,23,42,0.16)_40%,transparent_75%)] blur-[120px]"></div>
+
+    <div class="absolute inset-0 bg-[linear-gradient(rgba(212,175,55,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(212,175,55,0.03)_1px,transparent_1px)] bg-[size:70px_70px] opacity-20"></div>
+
+  </div>
+
+  <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-10">
+
+    <div class="grid grid-cols-1 items-center gap-16 lg:grid-cols-12 lg:gap-12">
+
+      <!-- ===== Left: Illustrated Map ===== -->
+      <div class="relative motion-safe:animate-fadeInUp lg:col-span-6" style="animation-delay:0ms">
+
+        <div class="relative aspect-square overflow-hidden rounded-[2.5rem] border border-gold-500/15 bg-gradient-to-br from-[#08111F] via-[#0F172A] to-[#030712] shadow-[0_40px_80px_rgba(0,0,0,.55)]">
+
+          <!-- Ambient Glow -->
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(212,175,55,.08),transparent_40%),radial-gradient(circle_at_85%_80%,rgba(20,184,166,.05),transparent_40%)]"></div>
+
+          <!-- Street Grid -->
+          <svg viewBox="0 0 400 400"
+               class="absolute inset-0 h-full w-full text-gold-500/10"
+               aria-hidden="true">
+
+            <g stroke="currentColor" stroke-width="1">
+              <path d="M0 60H400"/>
+              <path d="M0 140H400"/>
+              <path d="M0 260H400"/>
+              <path d="M0 340H400"/>
+
+              <path d="M70 0V400"/>
+              <path d="M150 0V400"/>
+              <path d="M260 0V400"/>
+              <path d="M330 0V400"/>
+            </g>
+
+            <path d="M-20 380L420 40"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  opacity=".45"/>
+
+            <g fill="currentColor" opacity=".08">
+              <rect x="90" y="80" width="40" height="34" rx="4"/>
+              <rect x="180" y="170" width="50" height="40" rx="4"/>
+              <rect x="280" y="90" width="34" height="28" rx="4"/>
+              <rect x="30" y="180" width="28" height="46" rx="4"/>
+              <rect x="260" y="280" width="42" height="34" rx="4"/>
+              <rect x="120" y="280" width="30" height="30" rx="4"/>
+            </g>
+
+          </svg>
+
+          
+          <!-- vignette for legibility -->
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_90%_70%_at_50%_50%,transparent_30%,rgba(2,6,23,0.90)_100%)]"></div>
+
+<!-- animated location pin -->
+<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+
+  <!-- outer pulse -->
+  <span class="absolute left-1/2 top-1/2 h-32 w-32 -translate-x-1/2 -translate-y-1/2 rounded-full border border-cyan-400/10 motion-safe:animate-ping"></span>
+
+  <!-- middle pulse -->
+  <span class="absolute left-1/2 top-1/2 h-20 w-20 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/10 motion-safe:animate-pulse"></span>
+
+  <!-- inner glow -->
+  <span class="absolute left-1/2 top-1/2 h-12 w-12 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/20 blur-xl"></span>
+
+  <!-- floating pin -->
+  <span class="relative flex h-12 w-12 items-center justify-center rounded-full border border-cyan-400/40 bg-slate-900/90 text-cyan-300 shadow-[0_0_35px_rgba(34,211,238,.45)] motion-safe:animate-bounce">
+    <svg viewBox="0 0 24 24" fill="none" class="h-6 w-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/>
+      <circle cx="12" cy="9" r="2.5"/>
+    </svg>
+  </span>
+
+</div>
+
+<!-- corner label -->
+<div class="absolute left-6 top-6 rounded-xl border border-white/10 bg-slate-900/80 px-4 py-2 backdrop-blur-xl">
+  <p class="font-mono text-[10px] uppercase tracking-[0.18em] text-cyan-300">
+    Islamabad • G-9
+  </p>
+</div>
+
+</div>
+
+<!-- floating location chip -->
+<div class="relative z-20 mx-auto -mt-8 w-max rounded-2xl border border-white/10 bg-slate-900/90 px-7 py-5 shadow-[0_15px_40px_rgba(0,0,0,.45)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400/40 hover:shadow-[0_0_40px_rgba(34,211,238,.25)] sm:mx-6">
+  <p class="font-body text-base font-semibold text-white">
+    OncoVita Centre
+  </p>
+  <p class="mt-1 font-mono text-[10px] uppercase tracking-[0.18em] text-slate-400">
+    G-9/1, Islamabad
+  </p>
+</div>
+
+</div>
+
+<!-- ===== Right: editorial content ===== -->
+<div class="lg:col-span-6">
+
+  <div class="motion-safe:animate-fadeInUp" style="animation-delay:120ms">
+
+    <p class="mb-6 inline-flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.20em] text-cyan-300">
+      <span class="h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
+      Find Us
+    </p>
+
+    <h2 class="font-display text-4xl leading-[1.05] text-white sm:text-5xl">
+      Our Location
+    </h2>
+
+    <p class="mt-6 max-w-xl font-body text-lg leading-relaxed text-slate-300">
+      Conveniently located in Islamabad's G-9 sector, OncoVita Cancer Centre is easily accessible from every part of the twin cities. Dedicated parking facilities and nationwide telehealth consultations ensure seamless patient care.
+    </p>
+
+  </div>
+
+  <!-- CTA -->
+  <a
+    href="https://maps.google.com/?q=G-9+Islamabad"
+    target="_blank"
+    rel="noopener"
+    class="group mt-10 inline-flex w-full max-w-md items-center justify-between rounded-full border border-white/10 bg-slate-900/70 py-2 pl-7 pr-2 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/40 hover:shadow-[0_0_40px_rgba(34,211,238,.25)] sm:w-auto"
+    style="animation-delay:200ms"
+  >
+
+    <span class="font-body text-base font-semibold text-white transition-colors duration-300 group-hover:text-cyan-300">
+      Get Directions
+    </span>
+
+    <span class="flex h-11 w-11 items-center justify-center rounded-full bg-cyan-400 text-slate-950 transition-all duration-500 group-hover:translate-x-1 group-hover:rotate-45 group-hover:scale-110">
+
+      <svg viewBox="0 0 24 24" fill="none" class="h-5 w-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7 17L17 7"/>
+        <path d="M9 7h8v8"/>
+      </svg>
+
+    </span>
+
+  </a>
+ <!-- social links -->
+<div class="mt-14 flex flex-wrap items-center gap-5 motion-safe:animate-fadeInUp" style="animation-delay:280ms">
+
+  <!-- Facebook -->
+  <a href="https://facebook.com/oncovita"
+     aria-label="OncoVita on Facebook"
+     class="group relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-slate-900/80 text-slate-400 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-slate-800 hover:text-cyan-300 hover:shadow-[0_0_35px_rgba(34,211,238,.25)]">
+
+    <span class="absolute inset-0 bg-cyan-400/0 transition-all duration-500 group-hover:bg-cyan-400/10"></span>
+
+    <svg viewBox="0 0 24 24"
+         fill="none"
+         class="relative h-5 w-5 transition-all duration-500 group-hover:scale-110 group-hover:-rotate-12"
+         stroke="currentColor"
+         stroke-width="1.7"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+      <path d="M15 8.5h-2c-.8 0-1.5.7-1.5 1.5v2h3.3l-.4 3H11.5V21h-3v-6H6.5V12H8.5V9.8C8.5 7.4 10 6 12.3 6H15v2.5Z"/>
+    </svg>
+
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://linkedin.com/company/oncovita"
+     aria-label="OncoVita on LinkedIn"
+     class="group relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-slate-900/80 text-slate-400 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-slate-800 hover:text-cyan-300 hover:shadow-[0_0_35px_rgba(34,211,238,.25)]">
+
+    <span class="absolute inset-0 bg-cyan-400/0 transition-all duration-500 group-hover:bg-cyan-400/10"></span>
+
+    <svg viewBox="0 0 24 24"
+         fill="none"
+         class="relative h-5 w-5 transition-all duration-500 group-hover:scale-110"
+         stroke="currentColor"
+         stroke-width="1.7"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+      <rect x="4" y="9" width="3" height="10"/>
+      <circle cx="5.5" cy="5.5" r="1.5"/>
+      <path d="M11 19v-6a3 3 0 0 1 6 0v6"/>
+      <path d="M11 12.5V19"/>
+    </svg>
+
+  </a>
+
+  <!-- YouTube -->
+  <a href="https://youtube.com/oncovita"
+     aria-label="OncoVita on YouTube"
+     class="group relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-slate-900/80 text-slate-400 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-slate-800 hover:text-cyan-300 hover:shadow-[0_0_35px_rgba(34,211,238,.25)]">
+
+    <span class="absolute inset-0 rounded-2xl bg-cyan-400/0 blur-xl transition-all duration-500 group-hover:bg-cyan-400/20"></span>
+
+    <svg viewBox="0 0 24 24"
+         fill="none"
+         class="relative h-5 w-5 transition-all duration-500 group-hover:scale-110"
+         stroke="currentColor"
+         stroke-width="1.7"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+      <rect x="3.5" y="6.5" width="17" height="11" rx="3"/>
+      <path d="M10.5 9.5l4 2.5-4 2.5v-5Z" fill="currentColor" stroke="none"/>
+    </svg>
+
+  </a>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+<!-- =================== END FIND US =================== -->
+ 
+<!-- ===================== FOOTER ===================== -->
+<!-- Assumes the existing OncoVita Tailwind config: colors (obsidian, charcoal, charcoal2, hairline,
+     gold.300/500/700, teal.300/500, ivory, mist, mute), fontFamily (display/body/mono), radius
+     (button, card), shadows (glowGold, glowTeal, lift), and keyframes/animations (fadeInUp, pulseGlow).
+     Editorial asymmetric layout (large wordmark + two staggered link lists + a horizontal legal strip)
+     rather than a traditional 4-equal-column footer. "Back to Top" links to #top — add id="top" to your
+     page root (or the header) and class="scroll-smooth" on the <html> element for native smooth scroll,
+     since that can't be set from within a footer fragment alone. -->
+<footer class="relative w-full overflow-hidden bg-obsidian pt-20" aria-label="Site footer">
+
+  <!-- ambient glow at top edge -->
+  <div class="pointer-events-none absolute inset-x-0 top-0 z-0 h-64 bg-[radial-gradient(ellipse_60%_100%_at_50%_0%,rgba(59,130,246,0.10),transparent_70%)]" aria-hidden="true"></div>
+
+  <!-- thin animated blue divider -->
+  <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-10">
+    <div class="h-px w-full bg-gradient-to-r from-transparent via-blue-600/70 to-transparent motion-safe:animate-pulseGlow [animation-duration:4s]"></div>
+  </div>
+
+  <div class="relative z-10 mx-auto max-w-7xl px-6 py-20 lg:px-10">
+
+    <div class="grid grid-cols-1 gap-16 lg:grid-cols-12 lg:gap-8">
+
+      <!-- ===== Brand block ===== -->
+      <div class="motion-safe:animate-fadeInUp lg:col-span-5" style="animation-delay:0ms">
+
+        <p class="font-display italic text-5xl leading-none text-ivory sm:text-6xl">
+          Onco<span class="text-blue-600 not-italic">Vita</span>
+        </p>
+
+        <p class="mt-6 max-w-sm font-body text-sm leading-relaxed text-mist sm:text-base">
+          Pakistan's premier cancer specialist clinic dedicated to compassionate, evidence-based oncology care. Serving patients from across the country and internationally.
+        </p>
+
+        <a
+          href="contact.html"
+          class="mt-8 inline-flex items-center rounded-[10px] bg-blue-600 px-7 py-3 font-body text-sm font-semibold text-white transition-all duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:bg-blue-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.45)] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-obsidian"
+        >
+          Book Consultation
+        </a>
+
+        <!-- social icons -->
+<div class="mt-10 flex items-center gap-4">
+  <a href="https://facebook.com/oncovita" target="_blank" rel="noopener" aria-label="OncoVita on Facebook" class="group flex h-11 w-11 items-center justify-center rounded-full border border-hairline text-mist transition-all duration-300 hover:border-blue-500/50 hover:text-blue-400 hover:shadow-[0_0_20px_rgba(59,130,246,.35)]">
+    <svg viewBox="0 0 24 24" fill="none" class="h-4.5 w-4.5 transition-transform duration-300 ease-out group-hover:-rotate-12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 8.5h-2c-.8 0-1.5.7-1.5 1.5v2h3.3l-.4 3H11.5V21h-3v-6H6.5V12H8.5V9.8C8.5 7.4 10 6 12.3 6H15v2.5Z" />
+    </svg>
+  </a>
+
+  <a href="https://linkedin.com/company/oncovita" target="_blank" rel="noopener" aria-label="OncoVita on LinkedIn" class="group flex h-11 w-11 items-center justify-center rounded-full border border-hairline text-mist transition-all duration-300 hover:border-blue-500/50 hover:text-blue-400 hover:shadow-[0_0_20px_rgba(59,130,246,.35)]">
+    <svg viewBox="0 0 24 24" fill="none" class="h-4.5 w-4.5 transition-transform duration-300 ease-out group-hover:scale-110" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4" y="9" width="3" height="10" />
+      <circle cx="5.5" cy="5.5" r="1.5" />
+      <path d="M11 19v-6a3 3 0 0 1 6 0v6" />
+      <path d="M11 12.5V19" />
+    </svg>
+  </a>
+
+  <a href="https://instagram.com/oncovita" target="_blank" rel="noopener" aria-label="OncoVita on Instagram" class="group flex h-11 w-11 items-center justify-center rounded-full border border-hairline text-mist transition-all duration-300 hover:border-blue-500/50 hover:text-blue-400 hover:shadow-[0_0_20px_rgba(59,130,246,.35)]">
+    <svg viewBox="0 0 24 24" fill="none" class="h-5 w-5 transition-transform duration-300 ease-out group-hover:scale-110" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+      <circle cx="12" cy="12" r="4"></circle>
+      <circle cx="17.5" cy="6.5" r="1"></circle>
+    </svg>
+  </a>
+
+  <a href="https://youtube.com/oncovita" target="_blank" rel="noopener" aria-label="OncoVita on YouTube" class="group relative flex h-11 w-11 items-center justify-center rounded-full border border-hairline text-mist transition-all duration-300 hover:border-blue-500/50 hover:text-blue-400">
+    <span class="absolute inset-0 rounded-full bg-blue-500/0 blur-md transition-all duration-300 group-hover:bg-blue-500/20" aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" fill="none" class="relative h-4.5 w-4.5 transition-transform duration-300 ease-out group-hover:scale-110" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3.5" y="6.5" width="17" height="11" rx="3" />
+      <path d="M10.5 9.5l4 2.5-4 2.5v-5Z" fill="currentColor" stroke="none" />
+    </svg>
+  </a>
+</div>
+</div>
+
+<!-- ===== Quick Links (staggered) ===== -->
+<div class="motion-safe:animate-fadeInUp lg:col-span-3 lg:col-start-7" style="animation-delay:100ms">
+  <p class="mb-6 font-mono text-[11px] uppercase tracking-[0.16em] text-blue-400">Quick Links</p>
+
+  <ul class="flex flex-col gap-3">
+    <li><a href="#home" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-blue-300">Home</a></li>
+
+    <li><a href="about.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-blue-300">About Dr. Khalid</a></li>
+
+    <li><a href="services.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-blue-300">Services</a></li>
+
+    <li><a href="treatments.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-blue-300">Treatments</a></li>
+
+    <li><a href="reviews.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-blue-300">Patient Reviews</a></li>
+
+    <li><a href="faq.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-blue-300">FAQ</a></li>
+
+    <li><a href="contact.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-blue-300">Contact</a></li>
+  </ul>
+</div>
+
+      <!-- ===== Treatments (staggered lower) ===== -->
+      <div class="motion-safe:animate-fadeInUp lg:col-span-3 lg:mt-14" style="animation-delay:180ms">
+        <p class="mb-6 font-mono text-[11px] uppercase tracking-[0.16em] text-teal-300">Treatments</p>
+        <ul class="flex flex-col gap-3">
+          <li><a href="treatments.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-ivory">Chemotherapy</a></li>
+          <li><a href="treatments.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-ivory">Immunotherapy</a></li>
+          <li><a href="treatments.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-ivory">Targeted Therapy</a></li>
+          <li><a href="treatments.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-ivory">Hormonal Therapy</a></li>
+          <li><a href="treatments.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-ivory">Palliative Care</a></li>
+          <li><a href="treatments.html" class="group inline-flex items-center font-body text-sm text-mist transition-colors duration-200 hover:text-ivory">Second Opinion</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===== Legal: horizontal flowing strip, not a column ===== -->
+    <div class="mt-16 border-t border-hairline pt-8 motion-safe:animate-fadeInUp" style="animation-delay:240ms">
+      <nav aria-label="Legal">
+        <ul class="flex flex-wrap items-center gap-x-6 gap-y-3">
+          <li><a href="#" class="font-mono text-[11px] uppercase tracking-[0.12em] text-mute transition-colors duration-200 hover:text-gold-300">Privacy Policy</a></li>
+          <li class="text-hairline">&middot;</li>
+          <li><a href="#" class="font-mono text-[11px] uppercase tracking-[0.12em] text-mute transition-colors duration-200 hover:text-gold-300">Terms of Service</a></li>
+          <li class="text-hairline">&middot;</li>
+          <li><a href="#" class="font-mono text-[11px] uppercase tracking-[0.12em] text-mute transition-colors duration-200 hover:text-gold-300">Patient Rights</a></li>
+          <li class="text-hairline">&middot;</li>
+          <li><a href="#" class="font-mono text-[11px] uppercase tracking-[0.12em] text-mute transition-colors duration-200 hover:text-gold-300">Cookie Policy</a></li>
+          <li class="text-hairline">&middot;</li>
+          <li><a href="#" class="font-mono text-[11px] uppercase tracking-[0.12em] text-mute transition-colors duration-200 hover:text-gold-300">Disclaimer</a></li>
+          <li class="text-hairline">&middot;</li>
+          <li><a href="#" class="font-mono text-[11px] uppercase tracking-[0.12em] text-mute transition-colors duration-200 hover:text-gold-300">Sitemap</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- ===== Copyright ===== -->
+    <p class="mt-8 font-mono text-[11px] leading-relaxed text-mute">
+      &copy; 2025 OncoVita &middot; Dr. Arham Khalid Cancer Centre &middot; All Rights Reserved &middot; Islamabad, Pakistan
+    </p>
+  </div>
+
+</footer>
+<!-- =================== END FOOTER =================== -->
